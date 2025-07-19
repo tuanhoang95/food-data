@@ -17,7 +17,13 @@
       "Nêm muối, bột ngọt cho vừa ăn.",
       "Rắc hành lá, thì là thái nhỏ lên trên rồi tắt bếp."
     ],
-    "tags": ["canh", "mùa hè", "hải sản", "rau xanh", "truyền thống"]
+    "tags": [
+      "canh",
+      "mùa hè",
+      "hải sản",
+      "rau xanh",
+      "truyền thống"
+    ]
   },
   {
     "name": "Thịt kho tàu",
@@ -36,7 +42,14 @@
       "Cho trứng vào kho cùng đến khi nước sệt lại.",
       "Nêm nếm lại gia vị cho vừa ăn."
     ],
-    "tags": ["kho", "thịt heo", "mặn", "đậm đà", "món chính", "miền Nam"]
+    "tags": [
+      "kho",
+      "thịt heo",
+      "mặn",
+      "đậm đà",
+      "món chính",
+      "miền Nam"
+    ]
   },
   {
     "name": "Rau muống xào tỏi",
@@ -53,7 +66,13 @@
       "Cho rau muống vào xào nhanh trên lửa lớn.",
       "Nêm muối, bột ngọt, đảo đều rồi tắt bếp."
     ],
-    "tags": ["xào", "rau xanh", "ăn chay", "dễ làm", "món phụ"]
+    "tags": [
+      "xào",
+      "rau xanh",
+      "ăn chay",
+      "dễ làm",
+      "món phụ"
+    ]
   },
   {
     "name": "Cá kho tộ",
@@ -71,7 +90,13 @@
       "Kho nhỏ lửa đến khi nước sệt và cá thấm gia vị.",
       "Rắc tiêu, hành lá lên trên rồi tắt bếp."
     ],
-    "tags": ["kho", "cá", "món mặn", "miền Nam", "truyền thống"]
+    "tags": [
+      "kho",
+      "cá",
+      "món mặn",
+      "miền Nam",
+      "truyền thống"
+    ]
   },
   {
     "name": "Đậu phụ sốt cà chua",
@@ -89,6 +114,46 @@
       "Cho đậu phụ vào đảo nhẹ, đun sôi vài phút cho ngấm.",
       "Rắc hành lá lên trên rồi tắt bếp."
     ],
-    "tags": ["ăn chay", "sốt", "đậu phụ", "dễ làm", "món phụ", "truyền thống"]
+    "tags": [
+      "ăn chay",
+      "sốt",
+      "đậu phụ",
+      "dễ làm",
+      "món phụ",
+      "truyền thống"
+    ]
+  },
+  {
+    "name": "Mướp đắng xào trứng",
+    "ingredients": [
+      "2 quả mướp đắng (khổ qua)",
+      "2 quả trứng gà",
+      "1 củ hành tím",
+      "Dầu ăn",
+      "Gia vị: muối, bột ngọt, tiêu"
+    ],
+    "steps": [
+      "Mướp đắng rửa sạch, bổ đôi, bỏ ruột, thái lát mỏng.",
+      "Ngâm mướp đắng với nước muối loãng khoảng 10 phút để giảm vị đắng, sau đó rửa sạch.",
+      "Đập trứng ra bát, đánh đều với ít muối.",
+      "Phi thơm hành tím băm với dầu ăn.",
+      "Cho mướp đắng vào xào trên lửa lớn cho mềm vừa phải.",
+      "Đổ trứng vào đảo nhanh tay cho trứng bám đều và chín.",
+      "Nêm muối, bột ngọt, tiêu vừa ăn rồi tắt bếp."
+    ],
+    "tags": [
+      "xào",
+      "trứng",
+      "rau xanh",
+      "món phụ",
+      "đơn giản",
+      "nhanh",
+      "gia đình",
+      "dễ nấu",
+      "ít dầu mỡ",
+      "ăn cơm",
+      "bữa trưa",
+      "bữa tối"
+    ]
   }
 ]
