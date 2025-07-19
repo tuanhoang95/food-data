@@ -1,1 +1,94 @@
-
+[
+  {
+    "name": "Canh cua rau đay mùng tơi",
+    "ingredients": [
+      "200g cua đồng xay",
+      "100g rau đay",
+      "100g rau mùng tơi",
+      "1 quả cà chua",
+      "Hành lá, thì là",
+      "Gia vị: muối, bột ngọt"
+    ],
+    "steps": [
+      "Lọc cua để lấy nước cốt cua, phần bã giữ lại.",
+      "Phi thơm hành, cho cà chua vào xào chín.",
+      "Đổ nước cốt cua vào nồi, đun sôi.",
+      "Cho rau đay, mùng tơi và phần bã cua vào nấu chín.",
+      "Nêm muối, bột ngọt cho vừa ăn.",
+      "Rắc hành lá, thì là thái nhỏ lên trên rồi tắt bếp."
+    ],
+    "tags": ["canh", "mùa hè", "hải sản", "rau xanh", "truyền thống"]
+  },
+  {
+    "name": "Thịt kho tàu",
+    "ingredients": [
+      "500g thịt ba chỉ",
+      "4 quả trứng gà",
+      "1 củ hành tím",
+      "Nước dừa tươi",
+      "Gia vị: nước mắm, đường, tiêu, muối"
+    ],
+    "steps": [
+      "Luộc trứng, bóc vỏ, để riêng.",
+      "Thịt ba chỉ cắt miếng vừa ăn, ướp với hành tím băm, nước mắm, tiêu.",
+      "Đun nóng nồi, cho thịt vào xào săn.",
+      "Đổ nước dừa vào, thêm đường, đun nhỏ lửa cho thịt mềm.",
+      "Cho trứng vào kho cùng đến khi nước sệt lại.",
+      "Nêm nếm lại gia vị cho vừa ăn."
+    ],
+    "tags": ["kho", "thịt heo", "mặn", "đậm đà", "món chính", "miền Nam"]
+  },
+  {
+    "name": "Rau muống xào tỏi",
+    "ingredients": [
+      "300g rau muống",
+      "3 tép tỏi",
+      "Dầu ăn",
+      "Gia vị: muối, bột ngọt"
+    ],
+    "steps": [
+      "Rau muống rửa sạch, cắt khúc 5cm.",
+      "Tỏi băm nhỏ.",
+      "Đun nóng dầu, phi thơm tỏi.",
+      "Cho rau muống vào xào nhanh trên lửa lớn.",
+      "Nêm muối, bột ngọt, đảo đều rồi tắt bếp."
+    ],
+    "tags": ["xào", "rau xanh", "ăn chay", "dễ làm", "món phụ"]
+  },
+  {
+    "name": "Cá kho tộ",
+    "ingredients": [
+      "500g cá lóc hoặc cá basa",
+      "Hành tím, tỏi",
+      "Nước mắm, đường, tiêu",
+      "Nước dừa tươi"
+    ],
+    "steps": [
+      "Cá làm sạch, cắt khúc vừa ăn.",
+      "Ướp cá với hành tím, tỏi băm, nước mắm, tiêu khoảng 15 phút.",
+      "Đun nóng nồi đất hoặc chảo, cho cá vào áp chảo sơ.",
+      "Đổ nước dừa ngập cá, thêm đường vừa đủ.",
+      "Kho nhỏ lửa đến khi nước sệt và cá thấm gia vị.",
+      "Rắc tiêu, hành lá lên trên rồi tắt bếp."
+    ],
+    "tags": ["kho", "cá", "món mặn", "miền Nam", "truyền thống"]
+  },
+  {
+    "name": "Đậu phụ sốt cà chua",
+    "ingredients": [
+      "2 bìa đậu phụ",
+      "2 quả cà chua",
+      "Hành tím, tỏi",
+      "Dầu ăn, nước mắm, đường"
+    ],
+    "steps": [
+      "Đậu phụ cắt miếng vuông, chiên vàng hai mặt.",
+      "Cà chua rửa sạch, cắt nhỏ.",
+      "Phi thơm hành tỏi, cho cà chua vào xào mềm.",
+      "Thêm nước mắm, đường nêm vừa ăn.",
+      "Cho đậu phụ vào đảo nhẹ, đun sôi vài phút cho ngấm.",
+      "Rắc hành lá lên trên rồi tắt bếp."
+    ],
+    "tags": ["ăn chay", "sốt", "đậu phụ", "dễ làm", "món phụ", "truyền thống"]
+  }
+]
