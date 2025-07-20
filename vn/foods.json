@@ -9,6 +9,16 @@
       "Hành lá, thì là",
       "Gia vị: muối, bột ngọt"
     ],
+    "components": [
+      "cua đồng",
+      "rau đay",
+      "rau mùng tơi",
+      "cà chua",
+      "hành lá",
+      "thì là",
+      "muối",
+      "bột ngọt"
+    ],
     "steps": [
       "Lọc cua để lấy nước cốt cua, phần bã giữ lại.",
       "Phi thơm hành, cho cà chua vào xào chín.",
@@ -26,38 +36,19 @@
     ]
   },
   {
-    "name": "Thịt kho tàu",
-    "ingredients": [
-      "500g thịt ba chỉ",
-      "4 quả trứng gà",
-      "1 củ hành tím",
-      "Nước dừa tươi",
-      "Gia vị: nước mắm, đường, tiêu, muối"
-    ],
-    "steps": [
-      "Luộc trứng, bóc vỏ, để riêng.",
-      "Thịt ba chỉ cắt miếng vừa ăn, ướp với hành tím băm, nước mắm, tiêu.",
-      "Đun nóng nồi, cho thịt vào xào săn.",
-      "Đổ nước dừa vào, thêm đường, đun nhỏ lửa cho thịt mềm.",
-      "Cho trứng vào kho cùng đến khi nước sệt lại.",
-      "Nêm nếm lại gia vị cho vừa ăn."
-    ],
-    "tags": [
-      "kho",
-      "thịt heo",
-      "mặn",
-      "đậm đà",
-      "món chính",
-      "miền Nam"
-    ]
-  },
-  {
     "name": "Rau muống xào tỏi",
     "ingredients": [
       "300g rau muống",
       "3 tép tỏi",
       "Dầu ăn",
       "Gia vị: muối, bột ngọt"
+    ],
+    "components": [
+      "rau muống",
+      "tỏi",
+      "dầu ăn",
+      "muối",
+      "bột ngọt"
     ],
     "steps": [
       "Rau muống rửa sạch, cắt khúc 5cm.",
@@ -82,6 +73,16 @@
       "Nước mắm, đường, tiêu",
       "Nước dừa tươi"
     ],
+    "components": [
+      "cá lóc",
+      "cá basa",
+      "hành tím",
+      "tỏi",
+      "nước mắm",
+      "đường",
+      "tiêu",
+      "nước dừa"
+    ],
     "steps": [
       "Cá làm sạch, cắt khúc vừa ăn.",
       "Ướp cá với hành tím, tỏi băm, nước mắm, tiêu khoảng 15 phút.",
@@ -105,6 +106,15 @@
       "2 quả cà chua",
       "Hành tím, tỏi",
       "Dầu ăn, nước mắm, đường"
+    ],
+    "components": [
+      "đậu phụ",
+      "cà chua",
+      "hành tím",
+      "tỏi",
+      "dầu ăn",
+      "nước mắm",
+      "đường"
     ],
     "steps": [
       "Đậu phụ cắt miếng vuông, chiên vàng hai mặt.",
@@ -132,6 +142,16 @@
       "Dầu ăn",
       "Gia vị: muối, bột ngọt, tiêu"
     ],
+    "components": [
+      "mướp đắng",
+      "khổ qua",
+      "trứng gà",
+      "hành tím",
+      "dầu ăn",
+      "muối",
+      "bột ngọt",
+      "tiêu"
+    ],
     "steps": [
       "Mướp đắng rửa sạch, bổ đôi, bỏ ruột, thái lát mỏng.",
       "Ngâm mướp đắng với nước muối loãng khoảng 10 phút để giảm vị đắng, sau đó rửa sạch.",
@@ -154,6 +174,1633 @@
       "ăn cơm",
       "bữa trưa",
       "bữa tối"
+    ]
+  },
+  {
+    "name": "Phở cuốn",
+    "ingredients": [
+      "10 bánh phở cuốn (bánh phở mỏng dạng lá)",
+      "200g thịt bò thăn",
+      "1 quả dưa chuột",
+      "Xà lách, rau thơm (húng, mùi)",
+      "1 củ tỏi, 1 quả chanh",
+      "Nước mắm, đường, giấm, tiêu, dầu ăn"
+    ],
+    "components": [
+      "bánh phở",
+      "thịt bò",
+      "dưa chuột",
+      "xà lách",
+      "rau thơm",
+      "húng",
+      "mùi",
+      "tỏi",
+      "chanh",
+      "nước mắm",
+      "đường",
+      "giấm",
+      "tiêu",
+      "dầu ăn"
+    ],
+    "steps": [
+      "Thịt bò rửa sạch, thái mỏng, ướp với tỏi băm, tiêu, nước mắm, dầu ăn trong 15 phút.",
+      "Xào thịt bò với lửa lớn cho vừa chín tới, để nguội.",
+      "Dưa chuột rửa sạch, thái sợi hoặc lát mỏng.",
+      "Chuẩn bị rau sống: rửa sạch xà lách, rau thơm, để ráo nước.",
+      "Trải bánh phở ra đĩa, lần lượt đặt rau, thịt bò, dưa chuột vào rồi cuốn lại.",
+      "Pha nước chấm: nước mắm, chanh, tỏi băm, đường, giấm, thêm ớt nếu thích cay.",
+      "Dùng kèm với nước mắm chua ngọt."
+    ],
+    "tags": [
+      "cuốn",
+      "bò",
+      "ăn chơi",
+      "món cuốn",
+      "không dầu mỡ",
+      "thanh đạm",
+      "miền Bắc",
+      "dễ làm",
+      "món nhậu",
+      "ăn nhẹ",
+      "cuối tuần",
+      "truyền thống",
+      "mặn"
+    ]
+  },
+  {
+    "name": "Trứng rán",
+    "ingredients": [
+      "2–3 quả trứng gà (hoặc vịt)",
+      "1 củ hành tím (tùy chọn)",
+      "Hành lá (tùy chọn)",
+      "Gia vị: muối, tiêu, nước mắm",
+      "Dầu ăn"
+    ],
+    "components": [
+      "trứng gà",
+      "trứng vịt",
+      "hành tím",
+      "hành lá",
+      "muối",
+      "tiêu",
+      "nước mắm",
+      "dầu ăn"
+    ],
+    "steps": [
+      "Đập trứng vào bát, nêm muối, nước mắm, tiêu và đánh đều.",
+      "Thêm hành lá hoặc hành tím thái nhỏ nếu thích.",
+      "Đun nóng chảo với một ít dầu ăn.",
+      "Đổ trứng vào chảo, rán vàng hai mặt hoặc một mặt tùy khẩu vị.",
+      "Gắp ra đĩa và dùng nóng với cơm."
+    ],
+    "tags": [
+      "chiên",
+      "trứng",
+      "đơn giản",
+      "nhanh",
+      "dễ nấu",
+      "món phụ",
+      "cơm",
+      "ăn chay",
+      "bữa trưa",
+      "bữa tối",
+      "gia đình",
+      "truyền thống"
+    ]
+  },
+  {
+    "name": "Đậu phụ rán",
+    "ingredients": [
+      "2 bìa đậu phụ",
+      "Dầu ăn",
+      "Muối hoặc nước mắm chấm"
+    ],
+    "components": [
+      "đậu phụ",
+      "dầu ăn",
+      "muối",
+      "nước mắm"
+    ],
+    "steps": [
+      "Cắt đậu phụ thành miếng vuông vừa ăn.",
+      "Đun nóng dầu ăn trong chảo.",
+      "Cho đậu vào rán vàng đều hai mặt.",
+      "Vớt ra đĩa, dùng nóng với nước mắm chua ngọt hoặc muối tiêu."
+    ],
+    "tags": [
+      "đậu phụ",
+      "chiên",
+      "đơn giản",
+      "ăn chay",
+      "món phụ",
+      "cơm",
+      "gia đình",
+      "dễ nấu"
+    ]
+  },
+  {
+    "name": "Đậu phụ sốt cà chua",
+    "ingredients": [
+      "2 bìa đậu phụ",
+      "2 quả cà chua",
+      "Hành tím, hành lá",
+      "Dầu ăn, nước mắm, đường, muối"
+    ],
+    "components": [
+      "đậu phụ",
+      "cà chua",
+      "hành tím",
+      "hành lá",
+      "dầu ăn",
+      "nước mắm",
+      "đường",
+      "muối"
+    ],
+    "steps": [
+      "Chiên vàng đậu phụ hai mặt.",
+      "Phi hành tím, cho cà chua vào xào chín mềm.",
+      "Thêm nước mắm, đường, muối vừa ăn.",
+      "Cho đậu vào nấu cùng cà chua khoảng 5 phút.",
+      "Rắc hành lá lên rồi tắt bếp."
+    ],
+    "tags": [
+      "đậu phụ",
+      "sốt",
+      "ăn chay",
+      "truyền thống",
+      "món phụ",
+      "cơm",
+      "gia đình"
+    ]
+  },
+  {
+    "name": "Đậu phụ nhồi thịt",
+    "ingredients": [
+      "2 bìa đậu phụ",
+      "100g thịt heo băm",
+      "Hành tím, hành lá",
+      "Nước mắm, tiêu, dầu ăn"
+    ],
+    "components": [
+      "đậu phụ",
+      "thịt heo",
+      "hành tím",
+      "hành lá",
+      "nước mắm",
+      "tiêu",
+      "dầu ăn"
+    ],
+    "steps": [
+      "Cắt đôi đậu phụ, khoét nhẹ phần giữa.",
+      "Trộn thịt băm với hành, nước mắm, tiêu.",
+      "Nhồi thịt vào giữa miếng đậu.",
+      "Chiên vàng nhẹ hoặc hấp.",
+      "Có thể sốt cà chua hoặc kho mặn."
+    ],
+    "tags": [
+      "đậu phụ",
+      "thịt heo",
+      "sốt",
+      "kho",
+      "món chính",
+      "gia đình",
+      "dễ nấu",
+      "cơm",
+      "mặn"
+    ]
+  },
+  {
+    "name": "Đậu phụ kho tương",
+    "ingredients": [
+      "2 bìa đậu phụ",
+      "2 thìa tương bần hoặc tương hột",
+      "Hành khô, gừng",
+      "Gia vị: đường, tiêu"
+    ],
+    "components": [
+      "đậu phụ",
+      "tương bần",
+      "tương hột",
+      "hành",
+      "gừng",
+      "đường",
+      "tiêu"
+    ],
+    "steps": [
+      "Chiên vàng đậu phụ rồi để ráo dầu.",
+      "Phi hành, cho tương vào nấu sôi với ít nước.",
+      "Thêm đậu vào kho nhỏ lửa cho ngấm.",
+      "Nêm đường, tiêu, đun đến khi sánh lại."
+    ],
+    "tags": [
+      "đậu phụ",
+      "kho",
+      "ăn chay",
+      "truyền thống",
+      "món mặn",
+      "món phụ",
+      "cơm"
+    ]
+  },
+  {
+    "name": "Đậu phụ hấp hành gừng",
+    "ingredients": [
+      "2 bìa đậu phụ non",
+      "Hành lá, gừng",
+      "Nước tương, dầu mè"
+    ],
+    "components": [
+      "đậu phụ",
+      "hành lá",
+      "gừng",
+      "nước tương",
+      "dầu mè"
+    ],
+    "steps": [
+      "Cắt đậu phụ thành miếng vuông, xếp lên đĩa hấp.",
+      "Rắc hành và gừng thái chỉ lên trên.",
+      "Hấp cách thủy khoảng 10 phút.",
+      "Rưới nước tương và dầu mè trước khi dùng."
+    ],
+    "tags": [
+      "đậu phụ",
+      "hấp",
+      "ăn chay",
+      "nhẹ bụng",
+      "ít dầu mỡ",
+      "món phụ",
+      "thanh đạm"
+    ]
+  },
+  {
+    "name": "Canh rong biển đậu phụ",
+    "ingredients": [
+      "1 bìa đậu phụ non",
+      "5g rong biển khô",
+      "Nước dùng hoặc nước lọc",
+      "Gia vị: muối, nước mắm, hành lá"
+    ],
+    "components": [
+      "đậu phụ",
+      "rong biển",
+      "nước dùng",
+      "nước lọc",
+      "muối",
+      "nước mắm",
+      "hành lá"
+    ],
+    "steps": [
+      "Ngâm rong biển cho nở, rửa sạch.",
+      "Cắt đậu phụ thành miếng nhỏ.",
+      "Đun sôi nước, cho rong biển vào nấu.",
+      "Cho đậu phụ vào, nêm gia vị vừa ăn.",
+      "Rắc hành lá rồi tắt bếp."
+    ],
+    "tags": [
+      "canh",
+      "đậu phụ",
+      "ăn chay",
+      "món nước",
+      "thanh mát",
+      "dễ nấu",
+      "gia đình"
+    ]
+  },
+  {
+    "name": "Canh cà chua trứng",
+    "ingredients": [
+      "3 quả cà chua",
+      "2 quả trứng",
+      "Hành lá",
+      "Gia vị: muối, nước mắm, tiêu"
+    ],
+    "components": [
+      "cà chua",
+      "trứng",
+      "hành lá",
+      "muối",
+      "nước mắm",
+      "tiêu"
+    ],
+    "steps": [
+      "Cà chua rửa sạch, thái múi cau.",
+      "Đánh trứng đều.",
+      "Phi hành thơm, cho cà chua vào xào mềm.",
+      "Đổ nước vào nấu sôi, sau đó từ từ đổ trứng vào, khuấy nhẹ tạo vân.",
+      "Nêm muối, nước mắm, tiêu vừa ăn.",
+      "Rắc hành lá lên trên và tắt bếp."
+    ],
+    "tags": [
+      "canh",
+      "cà chua",
+      "trứng",
+      "dễ nấu",
+      "món nước",
+      "gia đình"
+    ]
+  },
+  {
+    "name": "Cà chua xào trứng",
+    "ingredients": [
+      "3 quả cà chua",
+      "3 quả trứng",
+      "Hành tím",
+      "Dầu ăn, muối, tiêu"
+    ],
+    "components": [
+      "cà chua",
+      "trứng",
+      "hành tím",
+      "dầu ăn",
+      "muối",
+      "tiêu"
+    ],
+    "steps": [
+      "Cà chua thái múi cau.",
+      "Đánh trứng với ít muối.",
+      "Phi hành tím thơm.",
+      "Xào cà chua đến khi mềm, thêm trứng vào đảo đều đến khi chín.",
+      "Nêm muối, tiêu vừa ăn, tắt bếp."
+    ],
+    "tags": [
+      "xào",
+      "cà chua",
+      "trứng",
+      "nhanh",
+      "đơn giản",
+      "món phụ"
+    ]
+  },
+  {
+    "name": "Canh cá nấu cà chua",
+    "ingredients": [
+      "300g cá (cá diêu hồng hoặc cá rô phi)",
+      "3 quả cà chua",
+      "Hành tím, gừng",
+      "Gia vị: muối, nước mắm, tiêu"
+    ],
+    "components": [
+      "cá",
+      "cà chua",
+      "hành tím",
+      "gừng",
+      "muối",
+      "nước mắm",
+      "tiêu"
+    ],
+    "steps": [
+      "Cá làm sạch, cắt khúc vừa ăn.",
+      "Phi hành tím, gừng thơm.",
+      "Cho cá vào xào sơ, thêm nước.",
+      "Thêm cà chua thái múi cau vào, nấu sôi.",
+      "Nêm gia vị vừa ăn, đun đến khi cá chín.",
+      "Rắc hành lá, tắt bếp."
+    ],
+    "tags": [
+      "canh",
+      "cá",
+      "cà chua",
+      "bổ dưỡng",
+      "món nước",
+      "gia đình"
+    ]
+  },
+  {
+    "name": "Sốt cà chua thịt bằm",
+    "ingredients": [
+      "200g thịt heo bằm",
+      "3 quả cà chua",
+      "Hành tím, tỏi",
+      "Gia vị: nước mắm, muối, đường"
+    ],
+    "components": [
+      "thịt heo",
+      "cà chua",
+      "hành tím",
+      "tỏi",
+      "nước mắm",
+      "muối",
+      "đường"
+    ],
+    "steps": [
+      "Phi hành tím, tỏi thơm.",
+      "Cho thịt bằm vào xào săn.",
+      "Thêm cà chua thái nhỏ, đun đến khi nhuyễn và sệt.",
+      "Nêm gia vị vừa ăn.",
+      "Dùng sốt này ăn kèm cơm hoặc làm món chấm."
+    ],
+    "tags": [
+      "sốt",
+      "cà chua",
+      "thịt heo",
+      "món chính",
+      "đậm đà",
+      "gia đình",
+      "mặn"
+    ]
+  },
+  {
+    "name": "Cà chua dầm muối ớt",
+    "ingredients": [
+      "3 quả cà chua",
+      "Muối, đường, ớt tươi",
+      "Chanh"
+    ],
+    "components": [
+      "cà chua",
+      "muối",
+      "đường",
+      "ớt tươi",
+      "chanh"
+    ],
+    "steps": [
+      "Cà chua thái miếng vừa ăn.",
+      "Pha muối, đường, nước cốt chanh và ớt tươi băm nhỏ.",
+      "Trộn cà chua với hỗn hợp trên.",
+      "Để khoảng 10 phút cho ngấm rồi dùng."
+    ],
+    "tags": [
+      "trộn",
+      "cà chua",
+      "ăn chơi",
+      "đơn giản",
+      "món phụ"
+    ]
+  },
+  {
+    "name": "Cá kho tộ",
+    "ingredients": [
+      "500g cá lóc hoặc cá trắm",
+      "Hành tím, tỏi",
+      "Nước mắm, đường, tiêu, ớt",
+      "Dầu ăn"
+    ],
+    "components": [
+      "cá lóc",
+      "cá trắm",
+      "hành tím",
+      "tỏi",
+      "nước mắm",
+      "đường",
+      "tiêu",
+      "ớt",
+      "dầu ăn"
+    ],
+    "steps": [
+      "Ướp cá với nước mắm, tiêu, đường trong 30 phút.",
+      "Phi thơm hành tím, tỏi trong nồi đất hoặc chảo sâu lòng.",
+      "Cho cá vào kho cùng, thêm chút nước lọc, đun nhỏ lửa đến khi nước cạn và cá thấm gia vị.",
+      "Rắc ớt thái lát, tắt bếp."
+    ],
+    "tags": [
+      "kho",
+      "cá",
+      "món chính",
+      "đậm đà",
+      "gia đình",
+      "mặn"
+    ]
+  },
+  {
+    "name": "Canh cá nấu chua",
+    "ingredients": [
+      "500g cá quả hoặc cá diêu hồng",
+      "Cà chua, dọc mùng, me chua",
+      "Hành lá, thì là",
+      "Gia vị: muối, nước mắm, đường"
+    ],
+    "components": [
+      "cá quả",
+      "cá diêu hồng",
+      "cà chua",
+      "dọc mùng",
+      "me chua",
+      "hành lá",
+      "thì là",
+      "muối",
+      "nước mắm",
+      "đường"
+    ],
+    "steps": [
+      "Rửa sạch cá, cắt khúc vừa ăn.",
+      "Nấu nước dùng với cà chua, me chua, dọc mùng.",
+      "Cho cá vào nấu chín.",
+      "Nêm muối, nước mắm, đường vừa ăn.",
+      "Thêm hành lá, thì là vào trước khi tắt bếp."
+    ],
+    "tags": [
+      "canh",
+      "cá",
+      "món nước",
+      "chua",
+      "gia đình"
+    ]
+  },
+  {
+    "name": "Chả cá Lã Vọng",
+    "ingredients": [
+      "500g cá lăng hoặc cá thu",
+      "Thì là, hành lá",
+      "Bột nghệ, bột mì, mắm, tiêu",
+      "Dầu ăn, mỡ gà"
+    ],
+    "components": [
+      "cá lăng",
+      "cá thu",
+      "thì là",
+      "hành lá",
+      "bột nghệ",
+      "bột mì",
+      "mắm",
+      "tiêu",
+      "dầu ăn",
+      "mỡ gà"
+    ],
+    "steps": [
+      "Cá lọc phi lê, cắt miếng vừa ăn.",
+      "Ướp cá với mắm, tiêu, bột nghệ.",
+      "Rán cá trên chảo với mỡ gà đến khi vàng giòn.",
+      "Xào thì là, hành lá với chút mỡ gà.",
+      "Dùng kèm bún và mắm tôm pha."
+    ],
+    "tags": [
+      "rán",
+      "cá",
+      "đậm đà",
+      "món nhậu",
+      "truyền thống",
+      "Hà Nội",
+      "mặn"
+    ]
+  },
+  {
+    "name": "Cá chiên xù",
+    "ingredients": [
+      "500g cá fillet",
+      "Bột chiên giòn",
+      "Trứng, bột mì",
+      "Dầu ăn"
+    ],
+    "components": [
+      "cá fillet",
+      "bột chiên giòn",
+      "trứng",
+      "bột mì",
+      "dầu ăn"
+    ],
+    "steps": [
+      "Ướp cá với muối, tiêu.",
+      "Nhúng cá qua bột mì, trứng, rồi lăn bột chiên giòn.",
+      "Chiên cá trong dầu nóng đến khi vàng giòn.",
+      "Dùng kèm tương ớt hoặc sốt mayonnaise."
+    ],
+    "tags": [
+      "chiên",
+      "cá",
+      "giòn",
+      "món nhậu",
+      "món ăn chơi",
+      "mặn"
+    ]
+  },
+  {
+    "name": "Canh chua cá bông lau",
+    "ingredients": [
+      "500g cá bông lau",
+      "Cà chua, bạc hà, đậu bắp",
+      "Me chua, thơm (dứa)",
+      "Gia vị: nước mắm, đường, tiêu"
+    ],
+    "components": [
+      "cá bông lau",
+      "cà chua",
+      "bạc hà",
+      "đậu bắp",
+      "me chua",
+      "thơm (dứa)",
+      "nước mắm",
+      "đường",
+      "tiêu"
+    ],
+    "steps": [
+      "Rửa sạch cá, cắt khúc.",
+      "Nấu nước dùng với me chua, thơm, cà chua.",
+      "Cho cá và các loại rau vào nấu chín.",
+      "Nêm nếm vừa ăn, tắt bếp."
+    ],
+    "tags": [
+      "canh",
+      "cá",
+      "chua",
+      "món nước",
+      "miền Nam"
+    ]
+  },
+  {
+    "name": "Gỏi cá mai",
+    "ingredients": [
+      "200g cá mai tươi",
+      "Rau thơm, hành tây, đậu phộng",
+      "Chanh, tỏi, ớt, đường, nước mắm"
+    ],
+    "components": [
+      "cá mai",
+      "rau thơm",
+      "hành tây",
+      "đậu phộng",
+      "chanh",
+      "tỏi",
+      "ớt",
+      "đường",
+      "nước mắm"
+    ],
+    "steps": [
+      "Cá mai làm sạch, thái lát mỏng.",
+      "Trộn cá với rau thơm, hành tây.",
+      "Pha nước mắm chua ngọt cay làm nước trộn.",
+      "Rưới nước trộn lên gỏi, rắc đậu phộng.",
+      "Dùng ngay."
+    ],
+    "tags": [
+      "gỏi",
+      "cá",
+      "ăn chơi",
+      "thanh mát",
+      "miền Trung",
+      "mặn"
+    ]
+  },
+  {
+    "name": "Tôm rang muối",
+    "ingredients": [
+      "500g tôm tươi",
+      "Tỏi băm",
+      "Ớt băm",
+      "Muối, tiêu, dầu ăn"
+    ],
+    "components": [
+      "tôm",
+      "tỏi",
+      "ớt",
+      "muối",
+      "tiêu",
+      "dầu ăn"
+    ],
+    "steps": [
+      "Rửa sạch tôm, để ráo.",
+      "Phi thơm tỏi và ớt trong dầu nóng.",
+      "Cho tôm vào rang với muối, tiêu cho đến khi tôm chín và săn lại.",
+      "Dùng nóng."
+    ],
+    "tags": [
+      "rang",
+      "tôm",
+      "món nhậu",
+      "đậm đà",
+      "gia đình",
+      "mặn"
+    ]
+  },
+  {
+    "name": "Canh chua tôm",
+    "ingredients": [
+      "300g tôm tươi",
+      "Cà chua, bạc hà, dọc mùng",
+      "Me chua",
+      "Hành lá, ngò gai",
+      "Gia vị: muối, nước mắm, đường"
+    ],
+    "components": [
+      "tôm",
+      "cà chua",
+      "bạc hà",
+      "dọc mùng",
+      "me chua",
+      "hành lá",
+      "ngò gai",
+      "muối",
+      "nước mắm",
+      "đường"
+    ],
+    "steps": [
+      "Nấu nước dùng với me, cà chua, bạc hà, dọc mùng.",
+      "Cho tôm vào nấu đến khi chín.",
+      "Nêm muối, nước mắm, đường vừa ăn.",
+      "Thêm hành lá và ngò gai trước khi tắt bếp."
+    ],
+    "tags": [
+      "canh",
+      "tôm",
+      "chua",
+      "món nước",
+      "gia đình"
+    ]
+  },
+  {
+    "name": "Tôm chiên xù",
+    "ingredients": [
+      "500g tôm tươi",
+      "Bột chiên xù",
+      "Trứng, bột mì",
+      "Dầu ăn"
+    ],
+    "components": [
+      "tôm",
+      "bột chiên xù",
+      "trứng",
+      "bột mì",
+      "dầu ăn"
+    ],
+    "steps": [
+      "Tôm bóc vỏ, để lại đuôi.",
+      "Nhúng tôm qua bột mì, trứng, rồi lăn bột chiên xù.",
+      "Chiên tôm trong dầu nóng đến khi vàng giòn.",
+      "Dùng kèm sốt mayonnaise hoặc tương ớt."
+    ],
+    "tags": [
+      "chiên",
+      "tôm",
+      "giòn",
+      "món nhậu",
+      "món ăn chơi",
+      "mặn"
+    ]
+  },
+  {
+    "name": "Tôm hấp bia",
+    "ingredients": [
+      "500g tôm tươi",
+      "1 lon bia",
+      "Gừng, hành lá",
+      "Muối, tiêu"
+    ],
+    "components": [
+      "tôm",
+      "bia",
+      "gừng",
+      "hành lá",
+      "muối",
+      "tiêu"
+    ],
+    "steps": [
+      "Rửa sạch tôm, để ráo.",
+      "Đun sôi bia với gừng và hành lá.",
+      "Hấp tôm trên nồi bia đến khi chín đỏ.",
+      "Rắc muối tiêu và dùng nóng."
+    ],
+    "tags": [
+      "hấp",
+      "tôm",
+      "nhanh",
+      "dễ nấu",
+      "gia đình",
+      "mặn"
+    ]
+  },
+  {
+    "name": "Tôm xào sả ớt",
+    "ingredients": [
+      "500g tôm tươi",
+      "Sả, ớt, tỏi băm",
+      "Dầu ăn",
+      "Nước mắm, đường, tiêu"
+    ],
+    "components": [
+      "tôm",
+      "sả",
+      "ớt",
+      "tỏi",
+      "dầu ăn",
+      "nước mắm",
+      "đường",
+      "tiêu"
+    ],
+    "steps": [
+      "Phi thơm sả, ớt, tỏi trong dầu nóng.",
+      "Cho tôm vào xào nhanh trên lửa lớn.",
+      "Nêm nước mắm, đường, tiêu vừa ăn.",
+      "Xào đến khi tôm chín và thấm gia vị."
+    ],
+    "tags": [
+      "xào",
+      "tôm",
+      "cay",
+      "đậm đà",
+      "món chính",
+      "gia đình",
+      "mặn"
+    ]
+  },
+  {
+    "name": "Gà luộc",
+    "ingredients": [
+      "1 con gà ta (khoảng 1.2 - 1.5kg)",
+      "Vài lát gừng",
+      "2-3 cây sả",
+      "Hành lá",
+      "Gia vị: muối, tiêu"
+    ],
+    "components": [
+      "gà",
+      "gừng",
+      "sả",
+      "hành lá",
+      "muối",
+      "tiêu"
+    ],
+    "steps": [
+      "Gà làm sạch, xát muối gừng bên trong và ngoài, rửa lại.",
+      "Cho gà vào nồi, thêm gừng lát, sả đập dập, hành lá.",
+      "Đổ nước ngập gà, thêm 1 thìa cà phê muối.",
+      "Đun sôi, hạ nhỏ lửa luộc khoảng 20-30 phút tùy trọng lượng gà đến khi chín tới.",
+      "Vớt gà ra, để nguội, chặt miếng vừa ăn.",
+      "Dùng kèm muối tiêu chanh hoặc nước mắm gừng."
+    ],
+    "tags": [
+      "luộc",
+      "gà",
+      "mặn",
+      "truyền thống",
+      "gia đình",
+      "dễ làm"
+    ]
+  },
+  {
+    "name": "Gà rang gừng",
+    "ingredients": [
+      "500g thịt đùi gà",
+      "1 củ gừng lớn",
+      "2-3 tép tỏi",
+      "1 củ hành tím",
+      "Hành lá",
+      "Dầu ăn",
+      "Gia vị: nước mắm, đường, tiêu, bột ngọt"
+    ],
+    "components": [
+      "gà",
+      "gừng",
+      "tỏi",
+      "hành tím",
+      "hành lá",
+      "dầu ăn",
+      "nước mắm",
+      "đường",
+      "tiêu",
+      "bột ngọt"
+    ],
+    "steps": [
+      "Thịt gà rửa sạch, chặt miếng vừa ăn, ướp với chút nước mắm, tiêu, đường, bột ngọt khoảng 15 phút.",
+      "Gừng thái sợi, hành tím, tỏi băm nhỏ.",
+      "Đun nóng dầu ăn, phi thơm hành tỏi.",
+      "Cho gà vào rang săn trên lửa lớn.",
+      "Khi gà săn lại, cho gừng thái sợi vào đảo đều.",
+      "Thêm chút nước mắm, đường, đảo đều cho gà thấm và nước sốt sánh lại.",
+      "Rắc hành lá thái nhỏ, tắt bếp."
+    ],
+    "tags": [
+      "rang",
+      "gà",
+      "gừng",
+      "mặn",
+      "đậm đà",
+      "gia đình",
+      "cơm"
+    ]
+  },
+  {
+    "name": "Canh gà lá giang",
+    "ingredients": [
+      "500g thịt gà (thịt đùi hoặc cánh)",
+      "100g lá giang",
+      "1 quả cà chua",
+      "Hành tím",
+      "Dầu ăn",
+      "Gia vị: muối, đường, nước mắm, bột ngọt, ớt (tùy chọn)"
+    ],
+    "components": [
+      "gà",
+      "lá giang",
+      "cà chua",
+      "hành tím",
+      "dầu ăn",
+      "muối",
+      "đường",
+      "nước mắm",
+      "bột ngọt",
+      "ớt"
+    ],
+    "steps": [
+      "Thịt gà rửa sạch, chặt miếng vừa ăn, ướp với chút muối, nước mắm.",
+      "Lá giang rửa sạch, vò nhẹ cho dập.",
+      "Cà chua thái múi cau, hành tím băm nhỏ.",
+      "Phi thơm hành tím, cho gà vào xào săn.",
+      "Đổ lượng nước vừa đủ vào nồi, đun sôi.",
+      "Khi nước sôi, cho cà chua và lá giang vào.",
+      "Nêm nếm gia vị vừa ăn (chú ý vị chua của lá giang), đun thêm 5-7 phút cho gà chín mềm và vị chua ra đều.",
+      "Thêm ớt thái lát nếu thích cay, tắt bếp."
+    ],
+    "tags": [
+      "canh",
+      "gà",
+      "chua",
+      "thanh mát",
+      "miền Nam",
+      "gia đình"
+    ]
+  },
+  {
+    "name": "Gà xào sả ớt",
+    "ingredients": [
+      "500g thịt đùi gà",
+      "3-4 cây sả",
+      "2-3 quả ớt tươi",
+      "3-4 tép tỏi",
+      "1 củ hành tím",
+      "Dầu ăn",
+      "Gia vị: nước mắm, đường, bột ngọt, tiêu"
+    ],
+    "components": [
+      "gà",
+      "sả",
+      "ớt",
+      "tỏi",
+      "hành tím",
+      "dầu ăn",
+      "nước mắm",
+      "đường",
+      "bột ngọt",
+      "tiêu"
+    ],
+    "steps": [
+      "Thịt gà rửa sạch, chặt miếng vừa ăn, ướp với nước mắm, đường, bột ngọt, tiêu khoảng 15-20 phút.",
+      "Sả băm nhỏ (hoặc thái lát mỏng), ớt băm nhỏ, tỏi băm, hành tím băm.",
+      "Đun nóng dầu ăn, phi thơm hành tỏi, sả, ớt.",
+      "Cho gà đã ướp vào xào nhanh trên lửa lớn đến khi thịt săn lại và thấm gia vị.",
+      "Đảo đều cho đến khi gà chín vàng và có mùi thơm đặc trưng của sả ớt.",
+      "Tắt bếp, dùng nóng với cơm."
+    ],
+    "tags": [
+      "xào",
+      "gà",
+      "sả ớt",
+      "mặn",
+      "cay",
+      "đậm đà",
+      "gia đình",
+      "cơm"
+    ]
+  },
+  {
+    "name": "Gà nướng mật ong",
+    "ingredients": [
+      "1 con gà ta (khoảng 1.2 - 1.5kg) hoặc 500g đùi/cánh gà",
+      "2 thìa canh mật ong",
+      "2 thìa canh nước mắm",
+      "1 thìa canh dầu hào",
+      "1 thìa cà phê tỏi băm",
+      "1 thìa cà phê hành tím băm",
+      "1/2 thìa cà phê tiêu",
+      "1/2 thìa cà phê bột nghệ (tùy chọn)",
+      "Dầu ăn"
+    ],
+    "components": [
+      "gà",
+      "mật ong",
+      "nước mắm",
+      "dầu hào",
+      "tỏi",
+      "hành tím",
+      "tiêu",
+      "bột nghệ",
+      "dầu ăn"
+    ],
+    "steps": [
+      "Gà làm sạch, khứa vài đường trên thân hoặc đùi gà để dễ thấm gia vị.",
+      "Trộn đều mật ong, nước mắm, dầu hào, tỏi băm, hành tím băm, tiêu, bột nghệ.",
+      "Ướp gà với hỗn hợp trên, mát-xa đều, để ít nhất 2 tiếng hoặc qua đêm trong tủ lạnh.",
+      "Làm nóng lò nướng ở 180°C (350°F).",
+      "Xếp gà lên khay nướng có lót giấy bạc hoặc giấy nến.",
+      "Nướng gà khoảng 45-60 phút tùy kích thước, cứ 15 phút lại phết nước ướp lên gà để giữ ẩm và tạo màu đẹp.",
+      "Kiểm tra gà chín bằng cách xiên đũa vào phần dày nhất, nếu nước chảy ra trong là gà đã chín.",
+      "Dùng nóng với cơm hoặc xôi."
+    ],
+    "tags": [
+      "nướng",
+      "gà",
+      "mật ong",
+      "mặn",
+      "món chính",
+      "gia đình",
+      "tiệc"
+    ]
+  },
+  {
+    "name": "Cháo gà",
+    "ingredients": [
+      "1/2 con gà ta",
+      "1 chén gạo tẻ",
+      "1 nắm gạo nếp (tùy chọn)",
+      "Hành lá, ngò rí",
+      "Hành tím phi thơm",
+      "Gia vị: muối, tiêu, bột ngọt, nước mắm"
+    ],
+    "components": [
+      "ta",
+      "gạo tẻ",
+      "gạo nếp",
+      "hành lá",
+      "ngò rí",
+      "hành tím",
+      "muối",
+      "tiêu",
+      "bột ngọt",
+      "nước mắm"
+    ],
+    "steps": [
+      "Gà luộc chín (như món gà luộc), vớt ra để nguội, lọc lấy thịt, xương cho vào nồi nước luộc gà.",
+      "Gạo vo sạch, cho vào nồi nước luộc gà cùng xương, đun nhỏ lửa đến khi gạo nở bung thành cháo.",
+      "Thịt gà xé nhỏ hoặc thái hạt lựu.",
+      "Nêm nếm cháo với muối, nước mắm, bột ngọt vừa ăn.",
+      "Khi cháo chín nhừ, múc ra bát, cho thịt gà lên trên, rắc hành lá, ngò rí thái nhỏ và hành phi.",
+      "Thêm tiêu xay và dùng nóng."
+    ],
+    "tags": [
+      "cháo",
+      "gà",
+      "món nước",
+      "dễ tiêu",
+      "bữa sáng",
+      "người ốm",
+      "gia đình"
+    ]
+  },
+  {
+    "name": "Sườn xào chua ngọt",
+    "ingredients": [
+      "500g sườn non",
+      "1 củ hành tây",
+      "1 quả ớt chuông xanh",
+      "1 quả ớt chuông đỏ",
+      "2-3 tép tỏi",
+      "Gia vị sốt: 3 thìa canh đường, 2 thìa canh nước mắm, 2 thìa canh giấm, 1 thìa canh tương ớt (tùy chọn), 1/2 chén nước lọc",
+      "Dầu ăn",
+      "Hành lá, rau mùi"
+    ],
+    "components": [
+      "sườn non",
+      "hành tây",
+      "ớt chuông xanh",
+      "ớt chuông đỏ",
+      "tỏi",
+      "đường",
+      "nước mắm",
+      "giấm",
+      "tương ớt",
+      "nước lọc",
+      "dầu ăn",
+      "hành lá",
+      "rau mùi"
+    ],
+    "steps": [
+      "Sườn non rửa sạch, chặt miếng vừa ăn, chần qua nước sôi rồi rửa lại cho sạch bọt bẩn. Ướp sườn với chút muối, tiêu.",
+      "Hành tây, ớt chuông thái miếng vuông. Tỏi băm nhỏ.",
+      "Pha nước sốt chua ngọt: trộn đều đường, nước mắm, giấm, tương ớt và nước lọc.",
+      "Đun nóng dầu ăn, cho sườn vào chiên sơ hoặc rang cháy cạnh cho vàng đều các mặt. Vớt ra để ráo dầu.",
+      "Phi thơm tỏi, cho hành tây và ớt chuông vào xào nhanh khoảng 2 phút.",
+      "Đổ sườn đã chiên vào, sau đó rưới đều phần nước sốt chua ngọt lên.",
+      "Đảo đều trên lửa vừa cho sườn thấm sốt và nước sốt sánh lại. Nêm nếm lại cho vừa ăn.",
+      "Tắt bếp, rắc hành lá và rau mùi thái nhỏ lên trên. Dùng nóng với cơm."
+    ],
+    "tags": [
+      "xào",
+      "sườn",
+      "chua ngọt",
+      "mặn",
+      "đậm đà",
+      "gia đình",
+      "cơm"
+    ]
+  },
+  {
+    "name": "Sườn kho tàu",
+    "ingredients": [
+      "500g sườn non hoặc sườn thăn",
+      "3-4 quả trứng gà (hoặc trứng vịt) luộc",
+      "2-3 tép tỏi",
+      "1 củ hành tím",
+      "Dầu ăn",
+      "Gia vị: nước mắm, đường, tiêu, nước màu (nước hàng), nước dừa tươi (tùy chọn)"
+    ],
+    "components": [
+      "sườn non",
+      "sườn thăn",
+      "trứng gà",
+      "trứng vịt",
+      "tỏi",
+      "hành tím",
+      "dầu ăn",
+      "nước mắm",
+      "đường",
+      "tiêu",
+      "nước màu",
+      "nước dừa"
+    ],
+    "steps": [
+      "Sườn rửa sạch, chặt miếng, chần qua nước sôi rồi rửa lại. Ướp sườn với 1/2 lượng nước mắm, đường, tiêu, hành tím, tỏi băm khoảng 30 phút.",
+      "Trứng luộc chín, bóc vỏ.",
+      "Thắng nước màu: cho 2 thìa canh đường vào nồi, thêm chút nước, đun nhỏ lửa đến khi đường chuyển màu cánh gián.",
+      "Cho sườn đã ướp vào nồi nước màu, đảo đều cho sườn săn lại.",
+      "Thêm trứng luộc, nước mắm, tiêu còn lại và đổ nước lọc hoặc nước dừa tươi ngập sườn.",
+      "Đun sôi, sau đó hạ nhỏ lửa kho liu riu cho đến khi sườn mềm nhừ, thấm gia vị và nước sốt sánh lại.",
+      "Nêm nếm lại cho vừa ăn. Dùng nóng với cơm."
+    ],
+    "tags": [
+      "kho",
+      "sườn",
+      "trứng",
+      "mặn",
+      "kho tàu",
+      "đậm đà",
+      "gia đình",
+      "truyền thống",
+      "cơm"
+    ]
+  },
+  {
+    "name": "Canh sườn khoai tây cà rốt",
+    "ingredients": [
+      "500g sườn heo",
+      "2 củ khoai tây",
+      "2 củ cà rốt",
+      "1 củ hành tây (tùy chọn)",
+      "Hành lá, rau mùi",
+      "Gia vị: muối, hạt nêm, tiêu"
+    ],
+    "components": [
+      "sườn heo",
+      "khoai tây",
+      "cà rốt",
+      "hành tây",
+      "hành lá",
+      "rau mùi",
+      "muối",
+      "hạt nêm",
+      "tiêu"
+    ],
+    "steps": [
+      "Sườn heo rửa sạch, chặt miếng, chần sơ qua nước sôi để loại bỏ tạp chất. Rửa lại sườn.",
+      "Khoai tây, cà rốt gọt vỏ, thái miếng vừa ăn.",
+      "Cho sườn vào nồi, đổ nước ngập sườn, đun sôi rồi hớt bọt. Hạ nhỏ lửa hầm sườn khoảng 30-45 phút cho sườn mềm.",
+      "Khi sườn đã mềm, cho khoai tây và cà rốt vào nấu cùng đến khi các loại củ chín mềm.",
+      "Nêm nếm gia vị (muối, hạt nêm, tiêu) cho vừa ăn.",
+      "Tắt bếp, rắc hành lá, rau mùi thái nhỏ lên trên. Dùng nóng."
+    ],
+    "tags": [
+      "canh",
+      "sườn",
+      "khoai tây",
+      "cà rốt",
+      "món nước",
+      "bổ dưỡng",
+      "gia đình",
+      "dễ nấu"
+    ]
+  },
+  {
+    "name": "Sườn nướng BBQ",
+    "ingredients": [
+      "1kg sườn cốt lết hoặc sườn dải",
+      "Sốt ướp BBQ готовый (hoặc tự làm: tương cà, mật ong, nước mắm, tỏi băm, dầu hào, đường, tiêu)",
+      "Tỏi băm, hành tím băm",
+      "Dầu ăn"
+    ],
+    "components": [
+      "sườn cốt lết",
+      "sườn dải",
+      "sốt BBQ",
+      "tương cà",
+      "mật ong",
+      "nước mắm",
+      "tỏi",
+      "dầu hào",
+      "đường",
+      "tiêu",
+      "hành tím",
+      "dầu ăn"
+    ],
+    "steps": [
+      "Sườn rửa sạch, thấm khô. Ướp sườn với sốt BBQ (hoặc hỗn hợp tự làm) cùng tỏi băm, hành tím băm.",
+      "Để sườn ngấm gia vị ít nhất 2 tiếng trong tủ lạnh, tốt nhất là qua đêm.",
+      "Làm nóng lò nướng hoặc bếp than/lò than.",
+      "Nướng sườn trên vỉ hoặc khay nướng. Nếu nướng lò, nướng ở 180-200°C khoảng 30-45 phút, lật mặt và phết thêm sốt ướp vài lần để sườn không bị khô và có màu đẹp.",
+      "Nếu nướng than, trở đều tay để sườn chín vàng đều mà không bị cháy.",
+      "Kiểm tra sườn chín mềm, có mùi thơm đặc trưng. Dùng nóng."
+    ],
+    "tags": [
+      "nướng",
+      "sườn",
+      "BBQ",
+      "mặn",
+      "món chính",
+      "tiệc",
+      "cuối tuần"
+    ]
+  },
+  {
+    "name": "Sườn hấp tỏi",
+    "ingredients": [
+      "500g sườn non",
+      "1 củ tỏi lớn",
+      "1 ít gừng",
+      "Hành lá",
+      "Gia vị: nước tương, dầu hào, dầu mè, đường, tiêu, bột năng (hoặc bột bắp)"
+    ],
+    "components": [
+      "sườn non",
+      "tỏi",
+      "gừng",
+      "hành lá",
+      "nước tương",
+      "dầu hào",
+      "dầu mè",
+      "đường",
+      "tiêu",
+      "bột năng",
+      "bột bắp"
+    ],
+    "steps": [
+      "Sườn non rửa sạch, chặt miếng vừa ăn. Chần sơ qua nước sôi rồi rửa sạch lại.",
+      "Tỏi băm nhỏ, gừng thái sợi hoặc băm nhỏ.",
+      "Ướp sườn với tỏi băm, gừng, nước tương, dầu hào, dầu mè, đường, tiêu và một chút bột năng (để sườn mềm hơn). Trộn đều, ướp khoảng 30 phút.",
+      "Xếp sườn đã ướp vào đĩa sâu lòng.",
+      "Hấp cách thủy khoảng 25-35 phút hoặc đến khi sườn mềm và chín tới.",
+      "Rắc hành lá thái nhỏ lên trên khi sườn còn nóng. Dùng với cơm nóng."
+    ],
+    "tags": [
+      "hấp",
+      "sườn",
+      "tỏi",
+      "mặn",
+      "nhẹ bụng",
+      "gia đình",
+      "dễ nấu"
+    ]
+  },
+  {
+    "name": "Canh sườn nấu sấu",
+    "ingredients": [
+      "500g sườn non",
+      "6-8 quả sấu tươi (hoặc sấu đông lạnh)",
+      "2-3 quả cà chua",
+      "Hành lá, rau mùi",
+      "Gia vị: muối, hạt nêm, nước mắm, tiêu"
+    ],
+    "components": [
+      "sườn non",
+      "sấu",
+      "cà chua",
+      "hành lá",
+      "rau mùi",
+      "muối",
+      "hạt nêm",
+      "nước mắm",
+      "tiêu"
+    ],
+    "steps": [
+      "Sườn non rửa sạch, chặt miếng, chần sơ. Rửa lại sườn.",
+      "Cà chua thái múi cau. Sấu cạo vỏ, khứa nhẹ (hoặc đập dập nhẹ).",
+      "Cho sườn vào nồi, đổ nước ngập, đun sôi, hớt bọt. Hầm sườn khoảng 30 phút.",
+      "Cho sấu và cà chua vào nồi, đun tiếp cho sấu mềm và cà chua chín.",
+      "Dằm sấu cho ra vị chua, vớt bỏ bã sấu nếu không muốn ăn. Nêm nếm muối, hạt nêm, nước mắm vừa ăn.",
+      "Tắt bếp, rắc hành lá, rau mùi thái nhỏ và tiêu. Dùng nóng."
+    ],
+    "tags": [
+      "canh",
+      "sườn",
+      "sấu",
+      "chua",
+      "thanh mát",
+      "món nước",
+      "mùa hè",
+      "gia đình"
+    ]
+  },
+  {
+    "name": "Canh rau ngót thịt băm",
+    "ingredients": [
+      "200g rau ngót",
+      "100g thịt heo băm",
+      "Hành tím băm",
+      "Gia vị: muối, hạt nêm, nước mắm, tiêu"
+    ],
+    "components": [
+      "rau ngót",
+      "thịt heo băm",
+      "hành tím",
+      "muối",
+      "hạt nêm",
+      "nước mắm",
+      "tiêu"
+    ],
+    "steps": [
+      "Rau ngót tuốt lá, rửa sạch, vò nhẹ hoặc thái nhỏ tùy sở thích.",
+      "Thịt heo băm ướp với chút hạt nêm, tiêu.",
+      "Phi thơm hành tím, cho thịt băm vào xào săn.",
+      "Đổ lượng nước vừa đủ vào nồi, đun sôi.",
+      "Khi nước sôi, cho rau ngót vào, đun nhanh khoảng 2-3 phút cho rau chín tới.",
+      "Nêm nếm gia vị (muối, hạt nêm, nước mắm) cho vừa ăn.",
+      "Tắt bếp, múc ra bát, rắc thêm chút tiêu. Dùng nóng."
+    ],
+    "tags": [
+      "canh",
+      "rau ngót",
+      "thịt heo",
+      "món nước",
+      "thanh mát",
+      "dễ nấu",
+      "gia đình"
+    ]
+  },
+  {
+    "name": "Canh rau ngót nấu tôm tươi",
+    "ingredients": [
+      "200g rau ngót",
+      "150g tôm tươi",
+      "Hành tím băm",
+      "Gia vị: muối, hạt nêm, nước mắm, tiêu"
+    ],
+    "components": [
+      "rau ngót",
+      "tôm tươi",
+      "hành tím",
+      "muối",
+      "hạt nêm",
+      "nước mắm",
+      "tiêu"
+    ],
+    "steps": [
+      "Rau ngót tuốt lá, rửa sạch, vò nhẹ hoặc thái nhỏ.",
+      "Tôm tươi bóc vỏ, bỏ đầu, rút chỉ đen, băm nhỏ hoặc để nguyên con tùy thích. Ướp với chút hạt nêm, tiêu.",
+      "Phi thơm hành tím, cho tôm vào xào săn.",
+      "Đổ lượng nước vừa đủ vào nồi, đun sôi.",
+      "Khi nước sôi, cho rau ngót vào, đun nhanh khoảng 2-3 phút.",
+      "Nêm nếm gia vị cho vừa ăn.",
+      "Tắt bếp, múc ra bát, rắc thêm tiêu. Dùng nóng."
+    ],
+    "tags": [
+      "canh",
+      "rau ngót",
+      "tôm",
+      "món nước",
+      "thanh mát",
+      "hải sản",
+      "gia đình"
+    ]
+  },
+  {
+    "name": "Canh rau ngót nấu trứng",
+    "ingredients": [
+      "200g rau ngót",
+      "1-2 quả trứng gà (hoặc vịt)",
+      "Hành tím băm",
+      "Dầu ăn",
+      "Gia vị: muối, hạt nêm, nước mắm, tiêu"
+    ],
+    "components": [
+      "rau ngót",
+      "trứng gà",
+      "trứng vịt",
+      "hành tím",
+      "dầu ăn",
+      "muối",
+      "hạt nêm",
+      "nước mắm",
+      "tiêu"
+    ],
+    "steps": [
+      "Rau ngót tuốt lá, rửa sạch, vò nhẹ hoặc thái nhỏ.",
+      "Trứng đập ra bát, đánh tan với chút nước mắm, tiêu.",
+      "Phi thơm hành tím với chút dầu ăn.",
+      "Đổ lượng nước vừa đủ vào nồi, đun sôi.",
+      "Khi nước sôi, cho rau ngót vào nấu khoảng 2 phút.",
+      "Từ từ đổ trứng đã đánh vào nồi, khuấy nhẹ theo chiều kim đồng hồ để trứng tạo thành vân đẹp.",
+      "Nêm nếm gia vị cho vừa ăn.",
+      "Tắt bếp, múc ra bát, rắc tiêu. Dùng nóng."
+    ],
+    "tags": [
+      "canh",
+      "rau ngót",
+      "trứng",
+      "món nước",
+      "thanh mát",
+      "ăn chay",
+      "dễ nấu",
+      "gia đình"
+    ]
+  },
+  {
+    "name": "Rau ngót xào tỏi",
+    "ingredients": [
+      "300g rau ngót",
+      "3-4 tép tỏi",
+      "Dầu ăn",
+      "Gia vị: muối, hạt nêm, bột ngọt (tùy chọn)"
+    ],
+    "components": [
+      "rau ngót",
+      "tỏi",
+      "dầu ăn",
+      "muối",
+      "hạt nêm",
+      "bột ngọt"
+    ],
+    "steps": [
+      "Rau ngót tuốt lá, rửa sạch, để ráo.",
+      "Tỏi bóc vỏ, đập dập hoặc băm nhỏ.",
+      "Đun nóng dầu ăn trong chảo, cho tỏi vào phi thơm.",
+      "Cho rau ngót vào xào nhanh trên lửa lớn. Đảo đều tay để rau chín đều và giữ được màu xanh.",
+      "Nêm nếm gia vị (muối, hạt nêm, bột ngọt) vừa ăn.",
+      "Khi rau vừa chín tới (không nên xào quá lâu sẽ bị dai), tắt bếp.",
+      "Múc ra đĩa và dùng nóng với cơm."
+    ],
+    "tags": [
+      "xào",
+      "rau ngót",
+      "tỏi",
+      "rau xanh",
+      "ăn chay",
+      "dễ làm",
+      "món phụ"
+    ]
+  },
+  {
+    "name": "Vịt luộc",
+    "ingredients": [
+      "1 con vịt (khoảng 1.5 - 2kg)",
+      "Vài lát gừng",
+      "2-3 cây sả",
+      "Hành lá",
+      "Gia vị: muối, tiêu, giấm/chanh (để khử mùi)"
+    ],
+    "components": [
+      "vịt",
+      "gừng",
+      "sả",
+      "hành lá",
+      "muối",
+      "tiêu",
+      "giấm",
+      "chanh"
+    ],
+    "steps": [
+      "Vịt làm sạch, dùng muối và giấm/chanh xát đều bên trong và ngoài để khử mùi hôi, rửa lại thật sạch.",
+      "Cho vịt vào nồi, thêm gừng lát, sả đập dập, hành lá.",
+      "Đổ nước ngập vịt, thêm 1 thìa cà phê muối.",
+      "Đun sôi, hạ nhỏ lửa luộc khoảng 40-60 phút tùy trọng lượng vịt đến khi chín mềm.",
+      "Vớt vịt ra, để nguội, chặt miếng vừa ăn.",
+      "Dùng kèm nước mắm gừng hoặc xì dầu."
+    ],
+    "tags": [
+      "luộc",
+      "vịt",
+      "mặn",
+      "truyền thống",
+      "gia đình",
+      "dễ làm"
+    ]
+  },
+  {
+    "name": "Vịt rang riềng",
+    "ingredients": [
+      "500g thịt đùi vịt",
+      "1 củ riềng lớn",
+      "2-3 tép tỏi",
+      "1 củ hành tím",
+      "1 thìa cà phê mẻ (tùy chọn)",
+      "1 thìa cà phê mắm tôm (tùy chọn)",
+      "Hành lá, lá chanh (tùy chọn)",
+      "Dầu ăn",
+      "Gia vị: nước mắm, đường, tiêu, bột ngọt"
+    ],
+    "components": [
+      "vịt",
+      "riềng",
+      "tỏi",
+      "hành tím",
+      "mẻ",
+      "mắm tôm",
+      "hành lá",
+      "lá chanh",
+      "dầu ăn",
+      "nước mắm",
+      "đường",
+      "tiêu",
+      "bột ngọt"
+    ],
+    "steps": [
+      "Thịt vịt rửa sạch, chặt miếng vừa ăn, ướp với chút nước mắm, đường, tiêu, bột ngọt, mẻ, mắm tôm (nếu dùng), hành tím và tỏi băm, riềng giã nhỏ khoảng 30 phút.",
+      "Đun nóng dầu ăn, cho vịt đã ướp vào rang săn trên lửa lớn.",
+      "Khi thịt vịt săn lại, thêm chút nước và đun nhỏ lửa cho đến khi thịt vịt mềm và nước sốt sánh lại.",
+      "Rắc hành lá và lá chanh thái sợi (nếu dùng), tắt bếp."
+    ],
+    "tags": [
+      "rang",
+      "vịt",
+      "riềng",
+      "mặn",
+      "đậm đà",
+      "gia đình",
+      "cơm",
+      "miền Bắc"
+    ]
+  },
+  {
+    "name": "Vịt om sấu",
+    "ingredients": [
+      "1/2 con vịt (khoảng 800g - 1kg)",
+      "8-10 quả sấu tươi (hoặc sấu đông lạnh)",
+      "1 củ khoai sọ (hoặc khoai môn)",
+      "1 củ khoai tây",
+      "Vài nhánh sả, gừng",
+      "Hành tím, tỏi",
+      "Rau ngổ, hành lá, rau mùi tàu",
+      "Dầu ăn",
+      "Gia vị: nước mắm, đường, hạt nêm, tiêu"
+    ],
+    "components": [
+      "vịt",
+      "sấu",
+      "khoai sọ",
+      "khoai tây",
+      "sả",
+      "gừng",
+      "hành tím",
+      "tỏi",
+      "rau ngổ",
+      "hành lá",
+      "mùi tàu",
+      "dầu ăn",
+      "nước mắm",
+      "đường",
+      "hạt nêm",
+      "tiêu"
+    ],
+    "steps": [
+      "Vịt làm sạch, chặt miếng vừa ăn, ướp với nước mắm, hạt nêm, tiêu, hành tím, tỏi, sả, gừng băm nhỏ khoảng 30 phút.",
+      "Sấu cạo vỏ, khứa nhẹ hoặc đập dập. Khoai sọ, khoai tây gọt vỏ, thái miếng vừa.",
+      "Phi thơm hành tím, tỏi, sả, gừng. Cho vịt vào xào săn.",
+      "Đổ nước lọc ngập thịt, cho sấu vào đun sôi.",
+      "Khi nước sôi, hạ nhỏ lửa, om khoảng 20-30 phút cho vịt mềm. Cho khoai sọ, khoai tây vào om cùng đến khi các loại củ chín mềm.",
+      "Nêm nếm gia vị vừa ăn, dằm sấu cho ra vị chua (vớt bỏ bã sấu nếu không thích).",
+      "Tắt bếp, rắc rau ngổ, hành lá, mùi tàu thái nhỏ. Dùng nóng với bún hoặc cơm."
+    ],
+    "tags": [
+      "om",
+      "vịt",
+      "sấu",
+      "mặn",
+      "chua",
+      "đậm đà",
+      "gia đình",
+      "miền Bắc",
+      "món chính"
+    ]
+  },
+  {
+    "name": "Canh măng vịt",
+    "ingredients": [
+      "500g xương vịt (hoặc 1/2 con vịt)",
+      "200g măng khô (hoặc măng tươi)",
+      "Hành tím, hành lá, rau mùi tàu",
+      "Gia vị: muối, hạt nêm, nước mắm, tiêu"
+    ],
+    "components": [
+      "vịt",
+      "măng",
+      "hành tím",
+      "hành lá",
+      "mùi tàu",
+      "muối",
+      "hạt nêm",
+      "nước mắm",
+      "tiêu"
+    ],
+    "steps": [
+      "Măng khô ngâm nở, luộc nhiều lần cho hết độc và mềm. Xé sợi hoặc thái miếng vừa ăn. (Nếu dùng măng tươi thì luộc qua).",
+      "Xương vịt hoặc vịt chặt miếng, chần qua nước sôi để loại bỏ tạp chất. Ướp với chút hạt nêm, tiêu.",
+      "Phi thơm hành tím, cho măng vào xào sơ. Cho xương vịt vào xào cùng.",
+      "Đổ lượng nước vừa đủ, đun sôi rồi hớt bọt. Hầm xương vịt và măng khoảng 30-40 phút cho mềm.",
+      "Nêm nếm gia vị vừa ăn.",
+      "Tắt bếp, rắc hành lá, rau mùi tàu thái nhỏ và tiêu. Dùng nóng."
+    ],
+    "tags": [
+      "canh",
+      "vịt",
+      "măng",
+      "món nước",
+      "đậm đà",
+      "gia đình",
+      "truyền thống"
     ]
   }
 ]
