@@ -38,6 +38,7 @@
   },
   {
     "name": "Rau muống xào tỏi",
+    "image": "https://raw.githubusercontent.com/tuanhoang95/food-data/refs/heads/main/images/Thanh-pham-1-2759-1648467981.jpg",
     "ingredients": [
       "300g rau muống",
       "3 tép tỏi",
@@ -68,6 +69,7 @@
   },
   {
     "name": "Mướp đắng xào trứng",
+    "image": "https://raw.githubusercontent.com/tuanhoang95/food-data/refs/heads/main/images/-7548-1662797977.jpg",
     "ingredients": [
       "2 quả mướp đắng (khổ qua)",
       "2 quả trứng gà",
@@ -111,6 +113,7 @@
   },
   {
     "name": "Phở cuốn",
+    "image": "https://raw.githubusercontent.com/tuanhoang95/food-data/refs/heads/main/images/Buoc-8-8-3661-1680928906.jpg"
     "ingredients": [
       "10 bánh phở cuốn (bánh phở mỏng dạng lá)",
       "200g thịt bò thăn",
