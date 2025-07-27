@@ -2,6 +2,7 @@
   {
     "name": "Canh cua rau đay mùng tơi",
     "image": "https://raw.githubusercontent.com/tuanhoang95/food-data/refs/heads/main/images/f9272aa958e9b1b7e8f8.jpg",
+    "imageAspectRatio": 1,
     "ingredients": [
       "200g cua đồng xay",
       "100g rau đay",
@@ -39,6 +40,7 @@
   {
     "name": "Rau muống xào tỏi",
     "image": "https://raw.githubusercontent.com/tuanhoang95/food-data/refs/heads/main/images/Thanh-pham-1-2759-1648467981.jpg",
+    "imageAspectRatio": 1.48698884758,
     "ingredients": [
       "300g rau muống",
       "3 tép tỏi",
@@ -70,6 +72,7 @@
   {
     "name": "Mướp đắng xào trứng",
     "image": "https://raw.githubusercontent.com/tuanhoang95/food-data/refs/heads/main/images/-7548-1662797977.jpg",
+    "imageAspectRatio": 1.46818923328,
     "ingredients": [
       "2 quả mướp đắng (khổ qua)",
       "2 quả trứng gà",
@@ -114,6 +117,7 @@
   {
     "name": "Phở cuốn",
     "image": "https://raw.githubusercontent.com/tuanhoang95/food-data/refs/heads/main/images/Buoc-8-8-3661-1680928906.jpg",
+    "imageAspectRatio": 1.55172413793,
     "ingredients": [
       "10 bánh phở cuốn (bánh phở mỏng dạng lá)",
       "200g thịt bò thăn",
