@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticker Smart Crop Tool</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; display: flex; flex-direction: column; align-items: center; background: #f0f2f5; margin: 0; padding: 20px; }
+        .container { background: white; padding: 30px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); max-width: 95vw; width: 1150px; }
+        h2 { margin-top: 0; color: #1a1a1a; display: flex; align-items: center; gap: 10px; }
+
+        .controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 20px; padding: 20px; background: #f8f9fa; border-radius: 12px; }
+        .control-group { display: flex; flex-direction: column; }
+        .control-group.full-width { grid-column: 1 / -1; }
+        label { font-size: 12px; font-weight: 700; margin-bottom: 6px; color: #555; text-transform: uppercase; }
+        input[type="text"], input[type="number"], input[type="file"], textarea { padding: 10px; border: 1px solid #ced4da; border-radius: 8px; font-size: 14px; }
+        textarea { font-family: monospace; resize: vertical; min-height: 80px; }
+
+        .button-group { display: flex; gap: 10px; margin-top: 10px; }
+        button { padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.2s; }
+        button:hover { background: #0056b3; transform: translateY(-1px); }
+        button.secondary { background: #28a745; }
+        button.secondary:hover { background: #218838; }
+        button:disabled { background: #adb5bd; cursor: not-allowed; transform: none; }
+
+        .workspace-section { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 15px; margin-top: 10px; }
+        #canvas-container {
+            position: relative;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            background: #333;
+            display: none;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            width: 100%; /* Luôn vừa chiều ngang khung */
+            overflow: visible;
+        }
+        canvas {
+            display: block;
+            width: 100%; /* Ép chiều ngang ảnh vừa khung */
+            height: auto; /* Chiều cao tự dãn theo tỉ lệ ảnh */
+            cursor: crosshair;
+        }
+
+        .preview-area { width: 100%; margin-top: 40px; display: flex; flex-direction: column; gap: 30px; border-top: 2px solid #eee; padding-top: 30px; }
+        .preview-section { background: #fff; border: 1px solid #dee2e6; border-radius: 12px; padding: 20px; }
+        .preview-header { font-size: 16px; font-weight: 700; margin-bottom: 15px; color: #1a1a1a; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f0f0f0; padding-bottom: 10px; }
+
+        #frame-preview { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 15px; padding: 5px; }
+        .preview-item { border: 1px solid #eee; border-radius: 8px; background: #fff; display: flex; flex-direction: column; align-items: center; padding: 10px; position: relative; cursor: pointer; transition: all 0.2s; }
+        .preview-item.selected { border-color: #007bff; background: #e7f3ff; box-shadow: 0 0 10px rgba(0,123,255,0.2); }
+        .preview-item img { width: 100%; aspect-ratio: 1; object-fit: contain; background: #f8f9fa; border-radius: 6px; border: 1px solid #eee; }
+        .preview-item .app-name { font-size: 11px; font-weight: 600; margin-top: 8px; color: #333; text-align: center; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .preview-item .item-index { font-size: 10px; color: #fff; background: #007bff; padding: 2px 7px; border-radius: 10px; position: absolute; top: 5px; left: 5px; font-weight: bold; }
+
+        #result-json { width: 100%; height: 300px; font-size: 13px; border: 1px solid #eee; border-radius: 8px; background: #fcfcfc; margin-top: 10px; padding: 15px; font-family: 'Courier New', Courier, monospace; }
+
+        .status-bar { width: 100%; background: #1e1e1e; color: #00ff00; padding: 8px 15px; font-family: monospace; font-size: 12px; border-radius: 4px; margin-bottom: 10px; }
+        .footer { margin-top: 40px; font-size: 12px; color: #adb5bd; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>🎯 Sticker Smart Crop Tool</h2>
+
+    <div class="controls">
+        <div class="control-group">
+            <label>1. Chọn ảnh gốc</label>
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+        <div class="control-group">
+            <label>Số hàng</label>
+            <input type="number" id="gridRows" value="2" min="1">
+        </div>
+        <div class="control-group">
+            <label>Số cột</label>
+            <input type="number" id="gridCols" value="4" min="1">
+        </div>
+        <div class="control-group">
+            <label>Tên Sticker</label>
+            <input type="text" id="stickerName" value="Panda Head">
+        </div>
+        <div class="control-group">
+            <label>ID</label>
+            <input type="text" id="stickerId" value="1">
+        </div>
+        <div class="control-group">
+            <label>Style</label>
+            <input type="text" id="stickerStyle" value="meme">
+        </div>
+        <div class="control-group full-width">
+            <label>Danh sách App (JSON)</label>
+            <textarea id="appJsonList">[
+  { "appName": "Phone", "packageName": "com.google.android.dialer" },
+  { "appName": "Contacts", "packageName": "com.google.android.contacts" },
+  { "appName": "Messages", "packageName": "com.google.android.apps.messaging" },
+  { "appName": "Google Chrome", "packageName": "com.android.chrome" },
+  { "appName": "Safari", "packageName": "Not Available on Android" },
+  { "appName": "Camera", "packageName": "com.google.android.GoogleCamera" },
+  { "appName": "Google Photos", "packageName": "com.google.android.apps.photos" },
+  { "appName": "Gallery", "packageName": "com.android.gallery3d" },
+  { "appName": "Calculator", "packageName": "com.google.android.calculator" },
+  { "appName": "Clock", "packageName": "com.google.android.deskclock" },
+  { "appName": "Calendar", "packageName": "com.google.android.calendar" },
+  { "appName": "Files by Google", "packageName": "com.google.android.apps.nbu.files" },
+  { "appName": "Settings", "packageName": "com.android.settings" },
+  { "appName": "Gmail", "packageName": "com.google.android.gm" },
+  { "appName": "Apple Mail", "packageName": "Not Available on Android" },
+  { "appName": "Google Keep", "packageName": "com.google.android.keep" },
+  { "appName": "Facebook", "packageName": "com.facebook.katana" },
+  { "appName": "Instagram", "packageName": "com.instagram.android" },
+  { "appName": "TikTok", "packageName": "com.ss.android.ugc.trill" },
+  { "appName": "Threads", "packageName": "com.instagram.barcelona" },
+  { "appName": "X", "packageName": "com.twitter.android" },
+  { "appName": "Zalo", "packageName": "com.zing.zalo" },
+  { "appName": "Messenger", "packageName": "com.facebook.orca" },
+  { "appName": "Telegram", "packageName": "org.telegram.messenger" },
+  { "appName": "WhatsApp", "packageName": "com.whatsapp" },
+  { "appName": "YouTube", "packageName": "com.google.android.youtube" },
+  { "appName": "Netflix", "packageName": "com.netflix.mediaclient" },
+  { "appName": "Spotify", "packageName": "com.spotify.music" },
+  { "appName": "Disney+", "packageName": "com.disney.disneyplus" },
+  { "appName": "ChatGPT", "packageName": "com.openai.chatgpt" },
+  { "appName": "Google Gemini", "packageName": "com.google.android.apps.googleassistant" },
+  { "appName": "Microsoft Copilot", "packageName": "com.microsoft.copilot" },
+  { "appName": "Perplexity", "packageName": "ai.perplexity.perplexity" },
+  { "appName": "Shopee", "packageName": "com.shopee.vn" },
+  { "appName": "Lazada", "packageName": "com.lazada.android" },
+  { "appName": "TikTok Shop", "packageName": "com.tiktok.shop.seller" },
+  { "appName": "MoMo", "packageName": "com.mservice.momotransfer" },
+  { "appName": "ZaloPay", "packageName": "vn.com.vng.zalopay" },
+  { "appName": "VNPay", "packageName": "com.vnpay.vnpaywallet" },
+  { "appName": "Google Maps", "packageName": "com.google.android.apps.maps" },
+  { "appName": "Grab", "packageName": "com.grabtaxi.passenger" },
+  { "appName": "Be", "packageName": "xyz.be.customer" },
+  { "appName": "LinkedIn", "packageName": "com.linkedin.android" },
+  { "appName": "Pinterest", "packageName": "com.pinterest" },
+  { "appName": "Reddit", "packageName": "com.reddit.frontpage" },
+  { "appName": "Discord", "packageName": "com.discord" },
+  { "appName": "CapCut", "packageName": "com.lemon.lvoverseas" },
+  { "appName": "Canva", "packageName": "com.canva.editor" },
+  { "appName": "Google Drive", "packageName": "com.google.android.apps.docs" },
+  { "appName": "Dropbox", "packageName": "com.dropbox.android" },
+  { "appName": "OneDrive", "packageName": "com.microsoft.skydrive" },
+  { "appName": "Zoom", "packageName": "us.zoom.videomeetings" },
+  { "appName": "Google Meet", "packageName": "com.google.android.apps.meetings" },
+  { "appName": "Microsoft Teams", "packageName": "com.microsoft.teams" },
+  { "appName": "Notion", "packageName": "notion.id" },
+  { "appName": "Trello", "packageName": "com.trello" },
+  { "appName": "Duolingo", "packageName": "com.duolingo" },
+  { "appName": "Microsoft Word", "packageName": "com.microsoft.office.word" },
+  { "appName": "Microsoft Excel", "packageName": "com.microsoft.office.excel" },
+  { "appName": "Microsoft PowerPoint", "packageName": "com.microsoft.office.powerpoint" },
+  { "appName": "Google Docs", "packageName": "com.google.android.apps.docs.editors.docs" },
+  { "appName": "Google Sheets", "packageName": "com.google.android.apps.docs.editors.sheets" },
+  { "appName": "Google Slides", "packageName": "com.google.android.apps.docs.editors.slides" },
+  { "appName": "Adobe Acrobat Reader", "packageName": "com.adobe.reader" },
+  { "appName": "Shazam", "packageName": "com.shazam.android" },
+  { "appName": "SoundCloud", "packageName": "com.soundcloud.android" },
+  { "appName": "Amazon", "packageName": "com.amazon.mShop.android.shopping" },
+  { "appName": "Alibaba", "packageName": "com.alibaba.aliexpress.ita" },
+  { "appName": "AliExpress", "packageName": "com.aliexpress.aliexpress" },
+  { "appName": "Booking.com", "packageName": "com.booking" },
+  { "appName": "Agoda", "packageName": "com.agoda.mobile.consumer" },
+  { "appName": "Airbnb", "packageName": "com.airbnb.android" },
+  { "appName": "Trip.com", "packageName": "com.tripcom.app" },
+  { "appName": "My Viettel", "packageName": "com.viettel.myviettel" },
+  { "appName": "My VNPT", "packageName": "com.vnpt.myvnpt" },
+  { "appName": "My MobiFone", "packageName": "com.mobifone.mymobifone" },
+  { "appName": "Techcombank Mobile", "packageName": "vn.com.techcombank.identity" },
+  { "appName": "BIDV SmartBanking", "packageName": "com.vnpay.bidv" },
+  { "appName": "Vietcombank Digibank", "packageName": "com.vcb" },
+  { "appName": "MB Bank", "packageName": "com.mbmobile" },
+  { "appName": "Cake", "packageName": "vn.cake.banking" }
+]</textarea>
+        </div>
+        <div class="control-group full-width">
+            <div class="button-group">
+                <button id="modeBtn" style="background: #ff9800;">🔗 Chế độ: Lưới (Chỉnh cả cụm)</button>
+                <button id="previewBtn">Xem trước kết quả</button>
+                <button id="downloadBtn" disabled>Cắt & Xuất bản ZIP</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="workspace-section">
+        <div class="status-bar" id="status">Sẵn sàng. Hãy chọn ảnh để bắt đầu.</div>
+        <div id="canvas-container">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+
+    <div class="preview-area">
+        <div class="preview-section">
+            <div class="preview-header">
+                <span>🖼️ Preview Icons (Có thể click để chọn ô tương ứng)</span>
+                <span id="preview-count" style="font-size: 12px; color: #007bff;"></span>
+            </div>
+            <div id="frame-preview"></div>
+        </div>
+
+        <div class="preview-section">
+            <div class="preview-header">📄 JSON Kết quả</div>
+            <textarea id="result-json" readonly></textarea>
+        </div>
+    </div>
+</div>
+
+<div class="footer">StickerIcon App Development Tool v2.0</div>
+
+<script>
+    const imageInput = document.getElementById('imageInput');
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const downloadBtn = document.getElementById('downloadBtn');
+    const modeBtn = document.getElementById('modeBtn');
+    const previewBtn = document.getElementById('previewBtn');
+    const container = document.getElementById('canvas-container');
+    const status = document.getElementById('status');
+    const resultJsonArea = document.getElementById('result-json');
+    const framePreview = document.getElementById('frame-preview');
+    const previewCount = document.getElementById('preview-count');
+    const gridRowsInput = document.getElementById('gridRows');
+    const gridColsInput = document.getElementById('gridCols');
+    const appJsonInput = document.getElementById('appJsonList');
+    const stickerNameInput = document.getElementById('stickerName');
+    const stickerIdInput = document.getElementById('stickerId');
+    const stickerStyleInput = document.getElementById('stickerStyle');
+
+    let img = new Image();
+    let cropBoxes = [];
+    let selectedBoxIndex = -1;
+    let isDragging = false;
+    let isResizing = false;
+    let isGridMode = true;
+    let dragStart = { x: 0, y: 0 };
+    let gridX = 50, gridY = 50;
+    let boxSize = 150;
+    const spacing = 0;
+
+    function slugify(text) {
+        if (!text) return "unknown";
+        return text.toString().toLowerCase().trim()
+            .replace(/\s+/g, '_').replace(/[^\w\-]+/g, '').replace(/\-\-+/g, '_');
+    }
+
+    // Tự động cập nhật mọi thứ khi có bất kỳ thay đổi nào
+    [gridRowsInput, gridColsInput, stickerNameInput, stickerIdInput, stickerStyleInput].forEach(input => {
+        input.oninput = () => {
+            if (isGridMode && (input === gridRowsInput || input === gridColsInput)) {
+                generateGrid();
+            } else {
+                updateAll();
+            }
+        };
+    });
+
+    // Helper để parse JSON an toàn, chấp nhận cả mảng App hoặc Object Sticker đầy đủ
+    function getAppsFromJson(raw) {
+        if (!raw) return [];
+        try {
+            // Tìm ranh giới JSON thực sự để bỏ qua rác ở đầu/cuối (như ký tự U+2028 LINE SEPARATOR)
+            const firstBracket = raw.indexOf('[');
+            const firstBrace = raw.indexOf('{');
+            let startIdx = -1;
+            if (firstBracket !== -1 && firstBrace !== -1) startIdx = Math.min(firstBracket, firstBrace);
+            else startIdx = Math.max(firstBracket, firstBrace);
+
+            const lastBracket = raw.lastIndexOf(']');
+            const lastBrace = raw.lastIndexOf('}');
+            const endIdx = Math.max(lastBracket, lastBrace);
+
+            if (startIdx === -1 || endIdx === -1 || endIdx < startIdx) return [];
+
+            let jsonPart = raw.substring(startIdx, endIdx + 1);
+            // Loại bỏ dấu phẩy thừa ở cuối mảng/đối tượng
+            const cleanJson = jsonPart.replace(/,\s*([\]}])/g, '$1');
+            let parsed = JSON.parse(cleanJson);
+
+            // Nếu paste cả object sticker { id, name, app: [...] }
+            if (parsed && typeof parsed === 'object' && !Array.isArray(parsed) && Array.isArray(parsed.app)) {
+                return parsed.app;
+            }
+            // Nếu paste mảng [...]
+            return Array.isArray(parsed) ? parsed : [];
+        } catch (e) {
+            console.error("Lỗi Parse JSON:", e);
+            return null; // Trả về null để báo hiệu có lỗi
+        }
+    }
+
+    // Tự động cập nhật số lượng hàng/cột khi paste JSON
+    appJsonInput.oninput = () => {
+        const apps = getAppsFromJson(appJsonInput.value);
+        if (apps && apps.length > 0) {
+            const cols = parseInt(gridColsInput.value) || 4;
+            gridRowsInput.value = Math.ceil(apps.length / cols);
+            if (isGridMode) generateGrid();
+            else updateMetadata();
+        }
+    };
+
+    function generateGrid() {
+        if (!img.src) return;
+        const rows = parseInt(gridRowsInput.value) || 1;
+        const cols = parseInt(gridColsInput.value) || 1;
+        const size = boxSize;
+
+        cropBoxes = [];
+        for (let i = 0; i < rows * cols; i++) {
+            const r = Math.floor(i / cols);
+            const c = i % cols;
+            cropBoxes.push({
+                x: gridX + c * (size + spacing),
+                y: gridY + r * (size + spacing),
+                w: size,
+                h: size
+            });
+        }
+        selectedBoxIndex = -1;
+        updateAll();
+        if (isGridMode) status.innerText = `Chế độ Lưới: Kéo ô để di chuyển, kéo góc dưới-phải để co dãn.`;
+    }
+
+    modeBtn.onclick = () => {
+        isGridMode = !isGridMode;
+        if (isGridMode) {
+            modeBtn.innerHTML = "🔗 Chế độ: Lưới (Chỉnh cả cụm)";
+            modeBtn.style.background = "#ff9800";
+            generateGrid();
+        } else {
+            modeBtn.innerHTML = "🔓 Chế độ: Tự do (Chỉnh từng ô)";
+            modeBtn.style.background = "#28a745";
+            status.innerText = "Đã bỏ lưới. Giờ bạn có thể di chuyển và thay đổi kích thước từng ô lẻ.";
+        }
+    };
+
+    previewBtn.onclick = () => {
+        if (!img.src) {
+            status.innerText = "⚠️ Cần chọn ảnh gốc trước khi xem trước!";
+            alert("Vui lòng chọn ảnh gốc trước!");
+            return;
+        }
+        updateAll();
+        setTimeout(() => {
+            document.querySelector('.preview-area').scrollIntoView({ behavior: 'smooth' });
+            status.innerText = "✅ Đã cập nhật bản xem trước.";
+        }, 100);
+    };
+
+    imageInput.onchange = (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            img.onload = () => {
+                canvas.width = img.width;
+                canvas.height = img.height;
+                container.style.display = 'block';
+                generateGrid();
+                downloadBtn.disabled = false;
+            };
+            img.src = event.target.result;
+        };
+        reader.readAsDataURL(file);
+    };
+
+    function updateAll() {
+        draw();
+        updateMetadata();
+        setTimeout(updateFramePreview, 0); // Đưa vào hàng đợi để tránh block main thread
+    }
+
+    function draw() {
+        if (!img.src) return;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0);
+
+        // Vẽ overlay tối
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        cropBoxes.forEach((box, index) => {
+            const isSelected = index === selectedBoxIndex;
+
+            // Đục lỗ phần ảnh sáng
+            ctx.save();
+            ctx.beginPath();
+            ctx.rect(box.x, box.y, box.w, box.h);
+            ctx.clip();
+            ctx.drawImage(img, 0, 0);
+            ctx.restore();
+
+            // Vẽ viền kép để nổi bật
+            ctx.lineWidth = isSelected ? 4 : 2;
+            ctx.strokeStyle = '#000';
+            ctx.strokeRect(box.x, box.y, box.w, box.h);
+            ctx.strokeStyle = isSelected ? '#00ff00' : '#fff';
+            ctx.lineWidth = isSelected ? 2 : 1;
+            ctx.strokeRect(box.x, box.y, box.w, box.h);
+
+            // Đánh số thứ tự
+            ctx.fillStyle = isSelected ? '#00ff00' : '#fff';
+            ctx.font = 'bold 14px monospace';
+            ctx.shadowColor = 'black';
+            ctx.shadowBlur = 4;
+            ctx.fillText(index + 1, box.x + 5, box.y + 18);
+            ctx.shadowBlur = 0;
+
+            if (isSelected || (isGridMode && index === cropBoxes.length - 1)) {
+                ctx.fillStyle = '#00ff00';
+                ctx.beginPath();
+                ctx.arc(box.x + box.w, box.y + box.h, 10, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            // Vẽ điểm chính giữa (Center Crosshair) để dễ căn chỉnh
+            const centerX = box.x + box.w / 2;
+            const centerY = box.y + box.h / 2;
+            const crossSize = 6;
+
+            ctx.beginPath();
+            ctx.lineWidth = 1;
+            ctx.strokeStyle = isSelected ? '#00ff00' : 'rgba(255, 255, 255, 0.8)';
+            // Đường ngang
+            ctx.moveTo(centerX - crossSize, centerY);
+            ctx.lineTo(centerX + crossSize, centerY);
+            // Đường dọc
+            ctx.moveTo(centerX, centerY - crossSize);
+            ctx.lineTo(centerX, centerY + crossSize);
+            ctx.stroke();
+        });
+
+        // Vẽ viền bao quanh toàn bộ lưới nếu ở chế độ Grid
+        if (isGridMode && cropBoxes.length > 0) {
+            const rows = parseInt(gridRowsInput.value) || 1;
+            const cols = parseInt(gridColsInput.value) || 1;
+            const totalW = cols * boxSize + (cols - 1) * spacing;
+            const totalH = rows * boxSize + (rows - 1) * spacing;
+
+            ctx.strokeStyle = 'rgba(0, 255, 0, 0.5)';
+            ctx.setLineDash([5, 5]);
+            ctx.strokeRect(gridX - 5, gridY - 5, totalW + 10, totalH + 10);
+            ctx.setLineDash([]);
+        }
+    }
+
+    function updateMetadata() {
+        const sId = document.getElementById('stickerId').value;
+        const sName = document.getElementById('stickerName').value;
+        const appListRaw = appJsonInput.value;
+
+        let apps = getAppsFromJson(appListRaw);
+        if (apps === null) {
+            status.innerText = "⚠️ Nội dung JSON App có ký tự lạ hoặc sai cấu trúc. Hãy kiểm tra lại.";
+            apps = []; // Dùng mảng rỗng để không bị lỗi script phía dưới
+        }
+
+        const stickerFolder = slugify(sName);
+        // Sinh kết quả dựa trên cropBoxes để JSON luôn khớp với số ô trên màn hình
+        const results = cropBoxes.map((_, i) => {
+            const app = apps[i] || {};
+            const num = (i + 1).toString().padStart(3, '0');
+            const name = app.appName || `App ${i+1}`;
+            return {
+                url: `/stickers/${stickerFolder}/${num}_${slugify(name)}.png`,
+                appName: name,
+                packageName: app.packageName || ""
+            };
+        });
+
+        resultJsonArea.value = JSON.stringify({
+            id: sId,
+            name: sName,
+            style: document.getElementById('stickerStyle').value,
+            app: results
+        }, null, 2);
+    }
+
+    function updateFramePreview() {
+        if (!img.src) return;
+        let apps = getAppsFromJson(appJsonInput.value) || [];
+
+        framePreview.innerHTML = "";
+        const tempCanvas = document.createElement('canvas');
+        const tCtx = tempCanvas.getContext('2d');
+
+        cropBoxes.forEach((box, i) => {
+            tempCanvas.width = box.w; tempCanvas.height = box.h;
+            tCtx.drawImage(img, box.x, box.y, box.w, box.h, 0, 0, box.w, box.h);
+
+            const item = document.createElement('div');
+            item.className = 'preview-item' + (i === selectedBoxIndex ? ' selected' : '');
+            item.onclick = () => {
+                selectedBoxIndex = i; updateAll();
+                document.getElementById('canvas-container').scrollTo({
+                    left: box.x - 100, top: box.y - 100, behavior: 'smooth'
+                });
+            };
+
+            const pImg = document.createElement('img');
+            pImg.src = tempCanvas.toDataURL();
+            const idxSpan = document.createElement('span');
+            idxSpan.className = 'item-index'; idxSpan.innerText = i + 1;
+            const nameDiv = document.createElement('div');
+            nameDiv.className = 'app-name';
+            nameDiv.innerText = apps[i] ? apps[i].appName : `Box ${i+1}`;
+
+            item.appendChild(idxSpan); item.appendChild(pImg); item.appendChild(nameDiv);
+            framePreview.appendChild(item);
+        });
+        previewCount.innerText = `${cropBoxes.length} ô đang hoạt động`;
+    }
+
+    function getPos(e) {
+        const rect = canvas.getBoundingClientRect();
+        // Tính toán tỉ lệ scale giữa kích thước thực tế của ảnh và kích thước hiển thị trên màn hình
+        const scaleX = canvas.width / rect.width;
+        const scaleY = canvas.height / rect.height;
+
+        const clientX = e.clientX || (e.touches && e.touches[0] ? e.touches[0].clientX : 0);
+        const clientY = e.clientY || (e.touches && e.touches[0] ? e.touches[0].clientY : 0);
+
+        return {
+            x: (clientX - rect.left) * scaleX,
+            y: (clientY - rect.top) * scaleY
+        };
+    }
+
+    const onMouseDown = (e) => {
+        const pos = getPos(e);
+        if (e.cancelable) e.preventDefault();
+
+        if (isGridMode) {
+            // Kiểm tra xem có đang nhấn vào điểm co dãn lưới (góc dưới phải của ô cuối)
+            if (cropBoxes.length > 0) {
+                const lastBox = cropBoxes[cropBoxes.length - 1];
+                const dist = Math.sqrt(Math.pow(pos.x - (lastBox.x + lastBox.w), 2) + Math.pow(pos.y - (lastBox.y + lastBox.h), 2));
+                if (dist < 30) {
+                    isResizing = true;
+                    return;
+                }
+            }
+            isDragging = true;
+            dragStart = { x: pos.x - gridX, y: pos.y - gridY };
+            return;
+        }
+
+        if (selectedBoxIndex !== -1) {
+            const box = cropBoxes[selectedBoxIndex];
+            const dist = Math.sqrt(Math.pow(pos.x - (box.x + box.w), 2) + Math.pow(pos.y - (box.y + box.h), 2));
+            if (dist < 30) {
+                isResizing = true;
+                return;
+            }
+        }
+
+        let found = -1;
+        for (let i = cropBoxes.length - 1; i >= 0; i--) {
+            const box = cropBoxes[i];
+            if (pos.x > box.x && pos.x < box.x + box.w && pos.y > box.y && pos.y < box.y + box.h) {
+                found = i;
+                break;
+            }
+        }
+
+        selectedBoxIndex = found;
+        if (found !== -1) {
+            isDragging = true;
+            dragStart = { x: pos.x - cropBoxes[found].x, y: pos.y - cropBoxes[found].y };
+        }
+        updateAll();
+    };
+
+    const onMouseMove = (e) => {
+        if (!isDragging && !isResizing) return;
+        const pos = getPos(e);
+
+        if (isGridMode) {
+            if (isResizing) {
+                const cols = parseInt(gridColsInput.value) || 1;
+                // Tính toán boxSize mới dựa trên vị trí chuột
+                // totalW = cols * boxSize + (cols - 1) * spacing
+                // boxSize = (totalW - (cols - 1) * spacing) / cols
+                const totalW = pos.x - gridX;
+                boxSize = Math.max(10, (totalW - (cols - 1) * spacing) / cols);
+            } else if (isDragging) {
+                gridX = pos.x - dragStart.x;
+                gridY = pos.y - dragStart.y;
+            }
+            generateGrid();
+            return;
+        }
+
+        const box = cropBoxes[selectedBoxIndex];
+        if (isResizing) {
+            box.w = Math.max(10, pos.x - box.x);
+            box.h = Math.max(10, pos.y - box.y);
+        } else if (isDragging) {
+            box.x = pos.x - dragStart.x;
+            box.y = pos.y - dragStart.y;
+        }
+        draw();
+    };
+
+    const onMouseUp = (e) => {
+        if (!isDragging && !isResizing) return;
+
+        const wasAction = isDragging || isResizing;
+        isDragging = false;
+        isResizing = false;
+
+        if (wasAction) {
+            try {
+                updateAll();
+            } catch (err) {
+                console.error("Lỗi khi cập nhật preview:", err);
+                draw(); // Cố gắng vẽ lại ít nhất là canvas
+            }
+        }
+        status.innerText = "Đã nhả chuột. Vị trí đã được cập nhật.";
+    };
+
+    // Gắn sự kiện chắc chắn bằng addEventListener
+    canvas.addEventListener('mousedown', onMouseDown);
+    window.addEventListener('mousemove', onMouseMove);
+    window.addEventListener('mouseup', onMouseUp);
+
+    // Hỗ trợ cảm ứng
+    canvas.addEventListener('touchstart', onMouseDown, { passive: false });
+    window.addEventListener('touchmove', onMouseMove, { passive: false });
+    window.addEventListener('touchend', onMouseUp);
+
+    downloadBtn.onclick = async () => {
+        const zip = new JSZip();
+        let data;
+        try {
+            data = JSON.parse(resultJsonArea.value);
+        } catch (e) {
+            alert("Dữ liệu JSON không hợp lệ. Vui lòng kiểm tra lại.");
+            return;
+        }
+
+        const tempCanvas = document.createElement('canvas');
+        const tCtx = tempCanvas.getContext('2d');
+        status.innerText = "⏳ Đang cắt ảnh...";
+
+        // Chỉ lặp qua số lượng ô có trong dữ liệu App thực tế
+        const limit = Math.min(cropBoxes.length, data.app.length);
+
+        for (let i = 0; i < limit; i++) {
+            const box = cropBoxes[i];
+            const appInfo = data.app[i];
+
+            tempCanvas.width = box.w;
+            tempCanvas.height = box.h;
+            tCtx.drawImage(img, box.x, box.y, box.w, box.h, 0, 0, box.w, box.h);
+
+            const blob = await new Promise(resolve => tempCanvas.toBlob(resolve, 'image/png'));
+            const fileName = appInfo.url.split('/').pop();
+            zip.file(fileName, blob);
+        }
+
+        zip.file("sticker_data.json", JSON.stringify(data, null, 2));
+        const content = await zip.generateAsync({ type: "blob" });
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(content);
+        link.download = `${slugify(data.name)}.zip`;
+        link.click();
+        status.innerText = `✅ Đã xuất bản ZIP thành công (${limit} icons)!`;
+    };
+</script>
+</body>
+</html>
