@@ -1,0 +1,427 @@
+{
+  "id": "3",
+  "name": "DinoMochi",
+  "style": "cute",
+  "app": [
+    {
+      "url": "/stickers/dinomochi/001_phone.png",
+      "appName": "Phone",
+      "packageName": "com.google.android.dialer"
+    },
+    {
+      "url": "/stickers/dinomochi/002_contacts.png",
+      "appName": "Contacts",
+      "packageName": "com.google.android.contacts"
+    },
+    {
+      "url": "/stickers/dinomochi/003_messages.png",
+      "appName": "Messages",
+      "packageName": "com.google.android.apps.messaging"
+    },
+    {
+      "url": "/stickers/dinomochi/004_google_chrome.png",
+      "appName": "Google Chrome",
+      "packageName": "com.android.chrome"
+    },
+    {
+      "url": "/stickers/dinomochi/005_files.png",
+      "appName": "Files",
+      "packageName": "com.google.android.documentsui"
+    },
+    {
+      "url": "/stickers/dinomochi/006_camera.png",
+      "appName": "Camera",
+      "packageName": "com.google.android.GoogleCamera"
+    },
+    {
+      "url": "/stickers/dinomochi/007_google_photos.png",
+      "appName": "Google Photos",
+      "packageName": "com.google.android.apps.photos"
+    },
+    {
+      "url": "/stickers/dinomochi/008_gallery.png",
+      "appName": "Gallery",
+      "packageName": "com.android.gallery3d"
+    },
+    {
+      "url": "/stickers/dinomochi/009_calculator.png",
+      "appName": "Calculator",
+      "packageName": "com.google.android.calculator"
+    },
+    {
+      "url": "/stickers/dinomochi/010_clock.png",
+      "appName": "Clock",
+      "packageName": "com.google.android.deskclock"
+    },
+    {
+      "url": "/stickers/dinomochi/011_calendar.png",
+      "appName": "Calendar",
+      "packageName": "com.google.android.calendar"
+    },
+    {
+      "url": "/stickers/dinomochi/012_files_by_google.png",
+      "appName": "Files by Google",
+      "packageName": "com.google.android.apps.nbu.files"
+    },
+    {
+      "url": "/stickers/dinomochi/013_settings.png",
+      "appName": "Settings",
+      "packageName": "com.android.settings"
+    },
+    {
+      "url": "/stickers/dinomochi/014_gmail.png",
+      "appName": "Gmail",
+      "packageName": "com.google.android.gm"
+    },
+    {
+      "url": "/stickers/dinomochi/015_google_keep.png",
+      "appName": "Google Keep",
+      "packageName": "com.google.android.keep"
+    },
+    {
+      "url": "/stickers/dinomochi/016_facebook.png",
+      "appName": "Facebook",
+      "packageName": "com.facebook.katana"
+    },
+    {
+      "url": "/stickers/dinomochi/017_instagram.png",
+      "appName": "Instagram",
+      "packageName": "com.instagram.android"
+    },
+    {
+      "url": "/stickers/dinomochi/018_tiktok.png",
+      "appName": "TikTok",
+      "packageName": "com.ss.android.ugc.trill"
+    },
+    {
+      "url": "/stickers/dinomochi/019_threads.png",
+      "appName": "Threads",
+      "packageName": "com.instagram.barcelona"
+    },
+    {
+      "url": "/stickers/dinomochi/020_x.png",
+      "appName": "X",
+      "packageName": "com.twitter.android"
+    },
+    {
+      "url": "/stickers/dinomochi/021_zalo.png",
+      "appName": "Zalo",
+      "packageName": "com.zing.zalo"
+    },
+    {
+      "url": "/stickers/dinomochi/022_messenger.png",
+      "appName": "Messenger",
+      "packageName": "com.facebook.orca"
+    },
+    {
+      "url": "/stickers/dinomochi/023_telegram.png",
+      "appName": "Telegram",
+      "packageName": "org.telegram.messenger"
+    },
+    {
+      "url": "/stickers/dinomochi/024_whatsapp.png",
+      "appName": "WhatsApp",
+      "packageName": "com.whatsapp"
+    },
+    {
+      "url": "/stickers/dinomochi/025_youtube.png",
+      "appName": "YouTube",
+      "packageName": "com.google.android.youtube"
+    },
+    {
+      "url": "/stickers/dinomochi/026_spotify.png",
+      "appName": "Spotify",
+      "packageName": "com.spotify.music"
+    },
+    {
+      "url": "/stickers/dinomochi/027_disney.png",
+      "appName": "Disney+",
+      "packageName": "com.disney.disneyplus"
+    },
+    {
+      "url": "/stickers/dinomochi/028_chatgpt.png",
+      "appName": "ChatGPT",
+      "packageName": "com.openai.chatgpt"
+    },
+    {
+      "url": "/stickers/dinomochi/029_google_gemini.png",
+      "appName": "Google Gemini",
+      "packageName": "com.google.android.apps.googleassistant"
+    },
+    {
+      "url": "/stickers/dinomochi/030_microsoft_copilot.png",
+      "appName": "Microsoft Copilot",
+      "packageName": "com.microsoft.copilot"
+    },
+    {
+      "url": "/stickers/dinomochi/031_perplexity.png",
+      "appName": "Perplexity",
+      "packageName": "ai.perplexity.perplexity"
+    },
+    {
+      "url": "/stickers/dinomochi/032_shopee.png",
+      "appName": "Shopee",
+      "packageName": "com.shopee.vn"
+    },
+    {
+      "url": "/stickers/dinomochi/033_lazada.png",
+      "appName": "Lazada",
+      "packageName": "com.lazada.android"
+    },
+    {
+      "url": "/stickers/dinomochi/034_tiktok_shop.png",
+      "appName": "TikTok Shop",
+      "packageName": "com.tiktok.shop.seller"
+    },
+    {
+      "url": "/stickers/dinomochi/035_zalopay.png",
+      "appName": "ZaloPay",
+      "packageName": "vn.com.vng.zalopay"
+    },
+    {
+      "url": "/stickers/dinomochi/036_vnpay.png",
+      "appName": "VNPay",
+      "packageName": "com.vnpay.vnpaywallet"
+    },
+    {
+      "url": "/stickers/dinomochi/037_google_maps.png",
+      "appName": "Google Maps",
+      "packageName": "com.google.android.apps.maps"
+    },
+    {
+      "url": "/stickers/dinomochi/038_grab.png",
+      "appName": "Grab",
+      "packageName": "com.grabtaxi.passenger"
+    },
+    {
+      "url": "/stickers/dinomochi/039_be.png",
+      "appName": "Be",
+      "packageName": "xyz.be.customer"
+    },
+    {
+      "url": "/stickers/dinomochi/040_linkedin.png",
+      "appName": "LinkedIn",
+      "packageName": "com.linkedin.android"
+    },
+    {
+      "url": "/stickers/dinomochi/041_pinterest.png",
+      "appName": "Pinterest",
+      "packageName": "com.pinterest"
+    },
+    {
+      "url": "/stickers/dinomochi/042_reddit.png",
+      "appName": "Reddit",
+      "packageName": "com.reddit.frontpage"
+    },
+    {
+      "url": "/stickers/dinomochi/043_discord.png",
+      "appName": "Discord",
+      "packageName": "com.discord"
+    },
+    {
+      "url": "/stickers/dinomochi/044_canva.png",
+      "appName": "Canva",
+      "packageName": "com.canva.editor"
+    },
+    {
+      "url": "/stickers/dinomochi/045_google_drive.png",
+      "appName": "Google Drive",
+      "packageName": "com.google.android.apps.docs"
+    },
+    {
+      "url": "/stickers/dinomochi/046_dropbox.png",
+      "appName": "Dropbox",
+      "packageName": "com.dropbox.android"
+    },
+    {
+      "url": "/stickers/dinomochi/047_onedrive.png",
+      "appName": "OneDrive",
+      "packageName": "com.microsoft.skydrive"
+    },
+    {
+      "url": "/stickers/dinomochi/048_zoom.png",
+      "appName": "Zoom",
+      "packageName": "us.zoom.videomeetings"
+    },
+    {
+      "url": "/stickers/dinomochi/049_google_meet.png",
+      "appName": "Google Meet",
+      "packageName": "com.google.android.apps.meetings"
+    },
+    {
+      "url": "/stickers/dinomochi/050_microsoft_teams.png",
+      "appName": "Microsoft Teams",
+      "packageName": "com.microsoft.teams"
+    },
+    {
+      "url": "/stickers/dinomochi/051_notion.png",
+      "appName": "Notion",
+      "packageName": "notion.id"
+    },
+    {
+      "url": "/stickers/dinomochi/052_trello.png",
+      "appName": "Trello",
+      "packageName": "com.trello"
+    },
+    {
+      "url": "/stickers/dinomochi/053_duolingo.png",
+      "appName": "Duolingo",
+      "packageName": "com.duolingo"
+    },
+    {
+      "url": "/stickers/dinomochi/054_microsoft_word.png",
+      "appName": "Microsoft Word",
+      "packageName": "com.microsoft.office.word"
+    },
+    {
+      "url": "/stickers/dinomochi/055_microsoft_excel.png",
+      "appName": "Microsoft Excel",
+      "packageName": "com.microsoft.office.excel"
+    },
+    {
+      "url": "/stickers/dinomochi/056_microsoft_powerpoint.png",
+      "appName": "Microsoft PowerPoint",
+      "packageName": "com.microsoft.office.powerpoint"
+    },
+    {
+      "url": "/stickers/dinomochi/057_google_sheets.png",
+      "appName": "Google Sheets",
+      "packageName": "com.google.android.apps.docs.editors.sheets"
+    },
+    {
+      "url": "/stickers/dinomochi/058_google_slides.png",
+      "appName": "Google Slides",
+      "packageName": "com.google.android.apps.docs.editors.slides"
+    },
+    {
+      "url": "/stickers/dinomochi/059_adobe_acrobat_reader.png",
+      "appName": "Adobe Acrobat Reader",
+      "packageName": "com.adobe.reader"
+    },
+    {
+      "url": "/stickers/dinomochi/060_shazam.png",
+      "appName": "Shazam",
+      "packageName": "com.shazam.android"
+    },
+    {
+      "url": "/stickers/dinomochi/061_soundcloud.png",
+      "appName": "SoundCloud",
+      "packageName": "com.soundcloud.android"
+    },
+    {
+      "url": "/stickers/dinomochi/062_amazon.png",
+      "appName": "Amazon",
+      "packageName": "com.amazon.mShop.android.shopping"
+    },
+    {
+      "url": "/stickers/dinomochi/063_aliexpress.png",
+      "appName": "AliExpress",
+      "packageName": "com.aliexpress.aliexpress"
+    },
+    {
+      "url": "/stickers/dinomochi/064_bookingcom.png",
+      "appName": "Booking.com",
+      "packageName": "com.booking"
+    },
+    {
+      "url": "/stickers/dinomochi/065_agoda.png",
+      "appName": "Agoda",
+      "packageName": "com.agoda.mobile.consumer"
+    },
+    {
+      "url": "/stickers/dinomochi/066_airbnb.png",
+      "appName": "Airbnb",
+      "packageName": "com.airbnb.android"
+    },
+    {
+      "url": "/stickers/dinomochi/067_tripcom.png",
+      "appName": "Trip.com",
+      "packageName": "com.tripcom.app"
+    },
+    {
+      "url": "/stickers/dinomochi/068_my_viettel.png",
+      "appName": "My Viettel",
+      "packageName": "com.viettel.myviettel"
+    },
+    {
+      "url": "/stickers/dinomochi/069_my_vnpt.png",
+      "appName": "My VNPT",
+      "packageName": "com.vnpt.myvnpt"
+    },
+    {
+      "url": "/stickers/dinomochi/070_my_mobifone.png",
+      "appName": "My MobiFone",
+      "packageName": "com.mobifone.mymobifone"
+    },
+    {
+      "url": "/stickers/dinomochi/071_techcombank_mobile.png",
+      "appName": "Techcombank Mobile",
+      "packageName": "vn.com.techcombank.identity"
+    },
+    {
+      "url": "/stickers/dinomochi/072_vietcombank_digibank.png",
+      "appName": "Vietcombank Digibank",
+      "packageName": "com.vcb"
+    },
+    {
+      "url": "/stickers/dinomochi/073_mb_bank.png",
+      "appName": "MB Bank",
+      "packageName": "com.mbmobile"
+    },
+    {
+      "url": "/stickers/dinomochi/074_cake.png",
+      "appName": "Cake",
+      "packageName": "vn.cake.banking"
+    },
+    {
+      "url": "/stickers/dinomochi/075_app_75.png",
+      "appName": "App 75",
+      "packageName": ""
+    },
+    {
+      "url": "/stickers/dinomochi/076_app_76.png",
+      "appName": "App 76",
+      "packageName": ""
+    },
+    {
+      "url": "/stickers/dinomochi/077_app_77.png",
+      "appName": "App 77",
+      "packageName": ""
+    },
+    {
+      "url": "/stickers/dinomochi/078_app_78.png",
+      "appName": "App 78",
+      "packageName": ""
+    },
+    {
+      "url": "/stickers/dinomochi/079_app_79.png",
+      "appName": "App 79",
+      "packageName": ""
+    },
+    {
+      "url": "/stickers/dinomochi/080_app_80.png",
+      "appName": "App 80",
+      "packageName": ""
+    },
+    {
+      "url": "/stickers/dinomochi/081_app_81.png",
+      "appName": "App 81",
+      "packageName": ""
+    },
+    {
+      "url": "/stickers/dinomochi/082_app_82.png",
+      "appName": "App 82",
+      "packageName": ""
+    },
+    {
+      "url": "/stickers/dinomochi/083_app_83.png",
+      "appName": "App 83",
+      "packageName": ""
+    },
+    {
+      "url": "/stickers/dinomochi/084_app_84.png",
+      "appName": "App 84",
+      "packageName": ""
+    }
+  ]
+}
