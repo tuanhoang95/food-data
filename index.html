@@ -381,7 +381,9 @@
         ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-        cropBoxes.forEach((box, index) => {
+        const drawBox = (index) => {
+            const box = cropBoxes[index];
+            if (!box) return;
             const isSelected = index === selectedBoxIndex;
 
             // Đục lỗ phần ảnh sáng
@@ -430,7 +432,17 @@
             ctx.moveTo(centerX, centerY - crossSize);
             ctx.lineTo(centerX, centerY + crossSize);
             ctx.stroke();
+        };
+
+        // Vẽ các ô không được chọn trước
+        cropBoxes.forEach((_, index) => {
+            if (index !== selectedBoxIndex) drawBox(index);
         });
+
+        // Vẽ ô được chọn sau cùng để nó nằm trên cùng
+        if (selectedBoxIndex !== -1) {
+            drawBox(selectedBoxIndex);
+        }
 
         // Vẽ viền bao quanh toàn bộ lưới nếu ở chế độ Grid
         if (isGridMode && cropBoxes.length > 0) {
@@ -580,11 +592,12 @@
         if (isGridMode) {
             if (isResizing) {
                 const cols = parseInt(gridColsInput.value) || 1;
-                // Tính toán boxSize mới dựa trên vị trí chuột
-                // totalW = cols * boxSize + (cols - 1) * spacing
-                // boxSize = (totalW - (cols - 1) * spacing) / cols
+                const rows = parseInt(gridRowsInput.value) || 1;
                 const totalW = pos.x - gridX;
-                boxSize = Math.max(10, (totalW - (cols - 1) * spacing) / cols);
+                const totalH = pos.y - gridY;
+                const sizeW = (totalW - (cols - 1) * spacing) / cols;
+                const sizeH = (totalH - (rows - 1) * spacing) / rows;
+                boxSize = Math.max(10, sizeW, sizeH);
             } else if (isDragging) {
                 gridX = pos.x - dragStart.x;
                 gridY = pos.y - dragStart.y;
@@ -595,8 +608,9 @@
 
         const box = cropBoxes[selectedBoxIndex];
         if (isResizing) {
-            box.w = Math.max(10, pos.x - box.x);
-            box.h = Math.max(10, pos.y - box.y);
+            const newSize = Math.max(10, pos.x - box.x, pos.y - box.y);
+            box.w = newSize;
+            box.h = newSize;
         } else if (isDragging) {
             box.x = pos.x - dragStart.x;
             box.y = pos.y - dragStart.y;
